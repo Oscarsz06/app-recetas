@@ -1,5 +1,3 @@
-import re
-
 import streamlit as st
 
 from logica import (
@@ -9,7 +7,9 @@ from logica import (
     cargar_recetas,
     coincide_nombre,
     limpiar,
+    pasos_de,
     platos_filtrados,
+    tiempo_legible,
 )
 
 st.set_page_config(page_title="RecetApp", page_icon="🍳")
@@ -20,32 +20,79 @@ def datos_recetas():
     return cargar_recetas()
 
 
-def pasos_en_lista(texto):
-    partes = re.split(r"\s*(?=\d+\.\s)", texto)
-    return [p.strip() for p in partes if p.strip()]
-
-
-def mostrar_pasos(datos):
-    for paso in pasos_en_lista(datos["pasos"]):
-        st.write(paso)
-
-
 LEYENDA = ":green[✓ lo tienes] · :red[✗ te falta] (aceite y sal se dan por sentados)"
 
 
-def mostrar_ingredientes(datos, tengo):
-    """Con ingredientes elegidos: verde lo que tienes y rojo lo que falta."""
-    if not tengo:
-        st.markdown("**Ingredientes:** " + ", ".join(datos["ingredientes"]))
-        return
+def texto_porciones(n):
+    return f"{n} porción" if n == 1 else f"{n} porciones"
+
+
+def etiqueta(datos):
+    """Tiempo y dificultad para el título de cada plato en la lista."""
     partes = []
+    if "tiempo" in datos:
+        partes.append(tiempo_legible(datos["tiempo"]))
+    if "dificultad" in datos:
+        partes.append(datos["dificultad"])
+    return "".join(f" · {p}" for p in partes)
+
+
+def mostrar_datos(datos):
+    partes = []
+    if "tiempo" in datos:
+        partes.append(f"⏱ {tiempo_legible(datos['tiempo'])}")
+    if "porciones" in datos:
+        partes.append(f"👥 {texto_porciones(datos['porciones'])}")
+    if "dificultad" in datos:
+        partes.append(f"📊 {datos['dificultad']}")
+    if partes:
+        st.markdown("  ·  ".join(partes))
+    if datos.get("utensilios"):
+        st.markdown("**Utensilios:** " + ", ".join(datos["utensilios"]))
+
+
+def mostrar_ingredientes(datos, tengo):
+    """Lista con cantidades. Con ingredientes elegidos: verde lo que tienes y rojo lo que falta."""
+    cantidades = datos.get("cantidades", {})
+    titulo = "**Ingredientes**"
+    if "porciones" in datos:
+        titulo += f" (para {texto_porciones(datos['porciones'])})"
+    lineas = []
     for ingrediente in datos["ingredientes"]:
         clave = limpiar(ingrediente)
-        if clave in tengo or clave in BASICOS:
-            partes.append(f":green[✓ {ingrediente}]")
+        if not tengo:
+            texto = ingrediente
+        elif clave in tengo or clave in BASICOS:
+            texto = f":green[✓ {ingrediente}]"
         else:
-            partes.append(f":red[✗ {ingrediente}]")
-    st.markdown("**Ingredientes:** " + ", ".join(partes))
+            texto = f":red[✗ {ingrediente}]"
+        cantidad = cantidades.get(ingrediente)
+        lineas.append(f"- {texto}" + (f" — {cantidad}" if cantidad else ""))
+    st.markdown(titulo + "\n\n" + "\n".join(lineas))
+
+
+def mostrar_pasos(datos):
+    st.markdown("**Preparación**")
+    for numero, paso in enumerate(pasos_de(datos), start=1):
+        st.markdown(f"**{numero}.** {paso}")
+
+
+def mostrar_consejos(datos):
+    consejos = datos.get("consejos")
+    if consejos:
+        st.markdown("**💡 Consejos**\n\n" + "\n".join(f"- {c}" for c in consejos))
+
+
+def mostrar_receta(datos, tengo, faltan=None):
+    mostrar_datos(datos)
+    mostrar_ingredientes(datos, tengo)
+    if faltan is not None:
+        if faltan:
+            st.markdown("**Te faltan:** " + ", ".join(faltan))
+        else:
+            st.markdown("**Tienes todo lo necesario.**")
+    mostrar_pasos(datos)
+    mostrar_consejos(datos)
 
 
 recetas_por_region = datos_recetas()
@@ -98,10 +145,9 @@ if solo_preparables:
         st.caption(LEYENDA)
         if completas:
             for reg, nombre, datos in completas:
-                titulo = f"{nombre} · {reg}" if not region else nombre
+                titulo = (f"{nombre} · {reg}" if not region else nombre) + etiqueta(datos)
                 with st.expander(titulo, expanded=len(completas) <= 3):
-                    mostrar_ingredientes(datos, tengo)
-                    mostrar_pasos(datos)
+                    mostrar_receta(datos, tengo)
         elif busqueda:
             st.info("Ninguna receta completa coincide con tu búsqueda.")
         else:
@@ -134,14 +180,8 @@ else:
                 st.info("Ningún plato usa todos esos ingredientes. Quita alguno de la lista.")
 
         for reg, nombre, datos, faltan in platos:
-            titulo = nombre if region else f"{nombre} · {reg}"
+            titulo = (nombre if region else f"{nombre} · {reg}") + etiqueta(datos)
             if seleccion and not faltan:
                 titulo = "✅ " + titulo
             with st.expander(titulo, expanded=cantidad <= 3):
-                mostrar_ingredientes(datos, tengo)
-                if seleccion:
-                    if faltan:
-                        st.markdown("**Te faltan:** " + ", ".join(faltan))
-                    else:
-                        st.markdown("**Tienes todo lo necesario.**")
-                mostrar_pasos(datos)
+                mostrar_receta(datos, tengo, faltan if seleccion else None)

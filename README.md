@@ -16,6 +16,8 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 - Muestra las recetas a las que les falta solo un ingrediente, indicando cuál.
 - Reconoce mayúsculas, tildes y plurales (por ejemplo, "Papas", "PAPA" y "papa" cuentan igual).
 - Considera aceite y sal como ingredientes básicos que ya se tienen en casa.
+- Cada receta (150 en total, 30 por región) muestra tiempo, porciones, dificultad, utensilios, ingredientes con cantidades, pasos detallados y consejos.
+- En la web, los ingredientes que tienes aparecen en verde y los que faltan en rojo.
 
 ## Ejemplo de uso
 
@@ -100,16 +102,25 @@ Te falta solo 1 ingrediente para:
 
 ## Cómo agregar una receta
 
-Abre `recetas.json`, busca la región a la que pertenece la receta (o crea una nueva con el nombre del país) y agrega una entrada con este formato dentro de ella, cuidando las comas entre recetas:
+Abre `recetas.json`, busca la región y agrega una entrada con este formato, cuidando las comas entre recetas:
 
 ```json
 "Nombre de la receta": {
-    "ingredientes": ["ingrediente1", "ingrediente2"],
-    "pasos": "1. Primer paso. 2. Segundo paso."
+    "ingredientes": ["arroz", "pollo", "sal"],
+    "cantidades": {"arroz": "2 tazas", "pollo": "500 g", "sal": "1 cucharadita"},
+    "tiempo": 45,
+    "porciones": 4,
+    "dificultad": "Fácil",
+    "utensilios": ["olla", "tabla de cortar"],
+    "pasos": ["Primer paso con tiempos y señales de cocción.", "Segundo paso."],
+    "consejos": ["Un consejo útil.", "Otro consejo."]
 }
 ```
 
-Usa los mismos nombres de ingredientes que ya aparecen en otras recetas (por ejemplo "cebolla" o "plátano verde"), para que cada uno salga una sola vez en la lista de la página. Para quesos usa simplemente "queso".
+- `ingredientes` se escribe en minúscula y en singular; es la lista que usa el buscador.
+- `cantidades` debe tener exactamente los mismos ingredientes.
+- `tiempo` va en minutos; `dificultad` es "Fácil", "Intermedio" o "Desafiante".
+- `pasos` es una lista; el formato antiguo (texto con "1. ... 2. ...") también sigue funcionando.
 
 ## Próximos pasos
 

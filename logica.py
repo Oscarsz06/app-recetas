@@ -1,4 +1,5 @@
 import json
+import re
 import unicodedata
 from pathlib import Path
 
@@ -100,3 +101,24 @@ def coincide_nombre(nombre, consulta):
     palabras = limpiar(consulta).split()
     nombre_limpio = limpiar(nombre)
     return all(palabra in nombre_limpio for palabra in palabras)
+
+
+def pasos_de(datos):
+    """Pasos como lista de textos.
+
+    Acepta el formato nuevo (lista de pasos) y el viejo (un texto '1. ... 2. ...').
+    """
+    pasos = datos.get("pasos", [])
+    if isinstance(pasos, str):
+        partes = re.split(r"\s*(?=\d+\.\s)", pasos)
+        return [re.sub(r"^\d+\.\s*", "", p).strip() for p in partes if p.strip()]
+    return list(pasos)
+
+
+def tiempo_legible(minutos):
+    horas, mins = divmod(int(minutos), 60)
+    if horas and mins:
+        return f"{horas} h {mins} min"
+    if horas:
+        return f"{horas} h"
+    return f"{mins} min"
