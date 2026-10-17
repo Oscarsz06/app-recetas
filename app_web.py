@@ -3,6 +3,7 @@ import re
 import streamlit as st
 
 from logica import (
+    BASICOS,
     buscar_en_regiones,
     catalogo_ingredientes,
     cargar_recetas,
@@ -27,6 +28,24 @@ def pasos_en_lista(texto):
 def mostrar_pasos(datos):
     for paso in pasos_en_lista(datos["pasos"]):
         st.write(paso)
+
+
+LEYENDA = ":green[✓ lo tienes] · :red[✗ te falta] (aceite y sal se dan por sentados)"
+
+
+def mostrar_ingredientes(datos, tengo):
+    """Con ingredientes elegidos: verde lo que tienes y rojo lo que falta."""
+    if not tengo:
+        st.markdown("**Ingredientes:** " + ", ".join(datos["ingredientes"]))
+        return
+    partes = []
+    for ingrediente in datos["ingredientes"]:
+        clave = limpiar(ingrediente)
+        if clave in tengo or clave in BASICOS:
+            partes.append(f":green[✓ {ingrediente}]")
+        else:
+            partes.append(f":red[✗ {ingrediente}]")
+    st.markdown("**Ingredientes:** " + ", ".join(partes))
 
 
 recetas_por_region = datos_recetas()
@@ -76,11 +95,12 @@ if solo_preparables:
         casi = [c for c in casi if coincide_nombre(c[1], busqueda)]
 
         st.subheader("Puedes preparar" + donde + (" (filtrado por nombre)" if busqueda else ""))
+        st.caption(LEYENDA)
         if completas:
             for reg, nombre, datos in completas:
                 titulo = f"{nombre} · {reg}" if not region else nombre
                 with st.expander(titulo, expanded=len(completas) <= 3):
-                    st.markdown("**Ingredientes:** " + ", ".join(datos["ingredientes"]))
+                    mostrar_ingredientes(datos, tengo)
                     mostrar_pasos(datos)
         elif busqueda:
             st.info("Ninguna receta completa coincide con tu búsqueda.")
@@ -104,6 +124,8 @@ else:
         if busqueda:
             detalle += " (filtrado por nombre)"
         st.subheader(f"{cantidad} {palabra}{donde}{detalle}")
+        if seleccion:
+            st.caption(LEYENDA)
 
         if not platos:
             if busqueda:
@@ -116,7 +138,7 @@ else:
             if seleccion and not faltan:
                 titulo = "✅ " + titulo
             with st.expander(titulo, expanded=cantidad <= 3):
-                st.markdown("**Ingredientes:** " + ", ".join(datos["ingredientes"]))
+                mostrar_ingredientes(datos, tengo)
                 if seleccion:
                     if faltan:
                         st.markdown("**Te faltan:** " + ", ".join(faltan))
