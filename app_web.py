@@ -6,11 +6,12 @@ from logica import (
     buscar_en_regiones,
     catalogo_ingredientes,
     cargar_recetas,
+    coincide_nombre,
     limpiar,
     platos_filtrados,
 )
 
-st.set_page_config(page_title="App de Recetas", page_icon="🍳")
+st.set_page_config(page_title="RecetApp", page_icon="🍳")
 
 
 @st.cache_data
@@ -33,8 +34,14 @@ regiones = list(recetas_por_region.keys())
 catalogo = catalogo_ingredientes(recetas_por_region)
 opciones = sorted(catalogo.values(), key=limpiar)
 
-st.title("🍳 App de Recetas")
+st.title("🍳 RecetApp")
 st.write("Elige una región para ver sus platos y agrega ingredientes para ir reduciendo la lista.")
+
+busqueda = st.text_input(
+    "Buscar plato por nombre",
+    placeholder="Ej. pollo, arepa, ceviche...",
+    help="Escribe parte del nombre y presiona Enter. No importan las tildes ni las mayúsculas.",
+).strip()
 
 region = st.pills(
     "Región (opcional)",
@@ -65,14 +72,18 @@ if solo_preparables:
         st.info("Agrega al menos un ingrediente para ver lo que puedes preparar.")
     else:
         completas, casi = buscar_en_regiones(recetas_por_region, buscar_en, tengo)
+        completas = [c for c in completas if coincide_nombre(c[1], busqueda)]
+        casi = [c for c in casi if coincide_nombre(c[1], busqueda)]
 
-        st.subheader("Puedes preparar" + donde)
+        st.subheader("Puedes preparar" + donde + (" (filtrado por nombre)" if busqueda else ""))
         if completas:
             for reg, nombre, datos in completas:
                 titulo = f"{nombre} · {reg}" if not region else nombre
                 with st.expander(titulo, expanded=len(completas) <= 3):
                     st.markdown("**Ingredientes:** " + ", ".join(datos["ingredientes"]))
                     mostrar_pasos(datos)
+        elif busqueda:
+            st.info("Ninguna receta completa coincide con tu búsqueda.")
         else:
             st.info("Ninguna receta completa todavía. Prueba agregando más ingredientes.")
 
@@ -82,19 +93,23 @@ if solo_preparables:
                 etiqueta = f" ({reg})" if not region else ""
                 st.write(f"- **{nombre}**{etiqueta} (te falta: {falta})")
 else:
-    if not region and not seleccion:
-        st.info("Elige una región o agrega ingredientes para ver los platos.")
+    if not region and not seleccion and not busqueda:
+        st.info("Elige una región, agrega ingredientes o busca un plato por nombre.")
     else:
         platos = platos_filtrados(recetas_por_region, buscar_en, tengo)
+        platos = [p for p in platos if coincide_nombre(p[1], busqueda)]
         cantidad = len(platos)
         palabra = "plato" if cantidad == 1 else "platos"
-        if seleccion:
-            st.subheader(f"{cantidad} {palabra}{donde} con tus ingredientes")
-        else:
-            st.subheader(f"{cantidad} {palabra}{donde}")
+        detalle = " con tus ingredientes" if seleccion else ""
+        if busqueda:
+            detalle += " (filtrado por nombre)"
+        st.subheader(f"{cantidad} {palabra}{donde}{detalle}")
 
         if not platos:
-            st.info("Ningún plato usa todos esos ingredientes. Quita alguno de la lista.")
+            if busqueda:
+                st.info("Ningún plato coincide con esa búsqueda. Prueba con otra palabra o cambia los filtros.")
+            else:
+                st.info("Ningún plato usa todos esos ingredientes. Quita alguno de la lista.")
 
         for reg, nombre, datos, faltan in platos:
             titulo = nombre if region else f"{nombre} · {reg}"

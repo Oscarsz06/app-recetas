@@ -90,3 +90,13 @@ def platos_filtrados(recetas_por_region, regiones, tengo):
             resultado.append((region, nombre, datos, faltan))
     resultado.sort(key=lambda plato: (len(plato[3]), plato[1]))
     return resultado
+
+
+def coincide_nombre(nombre, consulta):
+    """True si todas las palabras de la búsqueda aparecen en el nombre del plato.
+
+    No distingue mayúsculas, tildes ni plurales. Sin búsqueda, todo coincide.
+    """
+    palabras = limpiar(consulta).split()
+    nombre_limpio = limpiar(nombre)
+    return all(palabra in nombre_limpio for palabra in palabras)

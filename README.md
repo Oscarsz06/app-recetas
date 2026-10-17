@@ -1,4 +1,4 @@
-# App de Recetas
+# RecetApp
 
 Aplicación en Python que te dice qué puedes cocinar con los ingredientes que compraste en el mercado. El usuario escribe sus compras y la app muestra las recetas que puede preparar, con sus pasos, y también las que le faltan por un solo ingrediente.
 
@@ -9,6 +9,7 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 - En la web, al elegir una región se ven todos sus platos, y cada ingrediente que agregas reduce la lista a los platos que lo usan. Un interruptor permite ver solo lo que ya puedes preparar con tus ingredientes.
 - En la web, la región (Colombia, México, Italia, España o Perú) es opcional: sin elegir ninguna busca en todas, y al elegir una botón filtra solo esa región. En la terminal la región se elige al inicio.
 - Incluye 150 recetas (30 por región).
+- En la web hay un buscador por nombre de plato (sin importar tildes, mayúsculas ni plurales), que funciona solo o combinado con la región y los ingredientes.
 - En la web eliges los ingredientes desde una lista, agregando y quitando los que quieras. En la terminal los escribes separados por coma.
 - Muestra las recetas de esa región que se pueden preparar completas, con su paso a paso.
 - Muestra las recetas a las que les falta solo un ingrediente, indicando cuál.
