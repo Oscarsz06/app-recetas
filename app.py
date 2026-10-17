@@ -30,14 +30,25 @@ print("Escribe los ingredientes que compraste, separados por coma.")
 entrada = input("Ingredientes: ")
 tengo = [limpiar(i) for i in entrada.split(",")]
 
-print("\nPuedes preparar:")
-encontrado = False
+completas = []
+casi = []
+
 for nombre, datos in recetas.items():
     faltan = [i for i in datos["ingredientes"] if i not in tengo and i not in basicos]
     if not faltan:
+        completas.append((nombre, datos))
+    elif len(faltan) == 1:
+        casi.append((nombre, faltan[0]))
+
+print("\nPuedes preparar:")
+if completas:
+    for nombre, datos in completas:
         print(f"\n- {nombre}")
         print(datos["pasos"])
-        encontrado = True
+else:
+    print("Ninguna receta completa todavía.")
 
-if not encontrado:
-    print("Ninguna receta con esos ingredientes todavía.")
+if casi:
+    print("\nTe falta solo 1 ingrediente para:")
+    for nombre, falta in casi:
+        print(f"- {nombre} (te falta: {falta})")
