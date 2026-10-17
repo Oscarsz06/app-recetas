@@ -41,3 +41,15 @@ def buscar_recetas(recetas, tengo):
         elif len(faltan) == 1:
             casi.append((nombre, faltan[0]))
     return completas, casi
+
+
+def catalogo_ingredientes(recetas_por_region):
+    """Devuelve {clave: nombre para mostrar} con todos los ingredientes (sin los básicos)."""
+    catalogo = {}
+    for recetas in recetas_por_region.values():
+        for datos in recetas.values():
+            for ingrediente in datos["ingredientes"]:
+                clave = limpiar(ingrediente)
+                if clave not in BASICOS:
+                    catalogo.setdefault(clave, ingrediente)
+    return catalogo

@@ -7,7 +7,8 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 ## Qué hace
 
 - Te deja elegir primero la región (Colombia, México, Italia, España o Perú).
-- Recibe una lista de ingredientes separados por coma.
+- Incluye 150 recetas (30 por región).
+- En la web eliges los ingredientes desde una lista, agregando y quitando los que quieras. En la terminal los escribes separados por coma.
 - Muestra las recetas de esa región que se pueden preparar completas, con su paso a paso.
 - Muestra las recetas a las que les falta solo un ingrediente, indicando cuál.
 - Reconoce mayúsculas, tildes y plurales (por ejemplo, "Papas", "PAPA" y "papa" cuentan igual).
@@ -105,7 +106,7 @@ Abre `recetas.json`, busca la región a la que pertenece la receta (o crea una n
 }
 ```
 
-Escribe los ingredientes en minúscula y en singular.
+Usa los mismos nombres de ingredientes que ya aparecen en otras recetas (por ejemplo "cebolla" o "plátano verde"), para que cada uno salga una sola vez en la lista de la página. Para quesos usa simplemente "queso".
 
 ## Próximos pasos
 

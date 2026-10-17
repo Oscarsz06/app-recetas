@@ -29,7 +29,7 @@
         },
         "Patacones": {
             "ingredientes": [
-                "platano verde",
+                "plátano verde",
                 "aceite",
                 "sal"
             ],
@@ -37,7 +37,7 @@
         },
         "Arepa de huevo": {
             "ingredientes": [
-                "harina de maiz",
+                "harina de maíz",
                 "huevo",
                 "aceite",
                 "sal"
@@ -48,14 +48,14 @@
             "ingredientes": [
                 "arroz",
                 "leche de coco",
-                "azucar",
+                "azúcar",
                 "sal"
             ],
             "pasos": "1. Cocina la leche de coco con una pizca de sal y azúcar. 2. Agrega el arroz y cocina a fuego bajo hasta que se seque."
         },
-        "Platano maduro frito": {
+        "Plátano maduro frito": {
             "ingredientes": [
-                "platano maduro",
+                "plátano maduro",
                 "aceite"
             ],
             "pasos": "1. Corta el plátano maduro en tajadas. 2. Fríe a fuego medio hasta que doren por ambos lados."
@@ -87,7 +87,7 @@
                 "pollo",
                 "papa",
                 "yuca",
-                "platano verde",
+                "plátano verde",
                 "cebolla",
                 "sal"
             ],
@@ -103,16 +103,209 @@
             ],
             "pasos": "1. Cocina las lentejas en agua hasta que ablanden. 2. Haz un sofrito de cebolla y tomate en aceite. 3. Mézclalo con las lentejas y deja hervir unos minutos con sal."
         },
-        "Arroz con atun": {
+        "Arroz con atún": {
             "ingredientes": [
                 "arroz",
-                "atun",
+                "atún",
                 "cebolla",
                 "tomate",
                 "aceite",
                 "sal"
             ],
             "pasos": "1. Sofríe cebolla y tomate. 2. Agrega el atún escurrido. 3. Mezcla con el arroz ya cocido."
+        },
+        "Bandeja paisa (versión sencilla)": {
+            "ingredientes": [
+                "frijoles",
+                "arroz",
+                "carne molida",
+                "huevo",
+                "chorizo",
+                "plátano maduro",
+                "aguacate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina los frijoles hasta que estén blandos. 2. Prepara el arroz. 3. Fríe la carne molida, el chorizo, el plátano maduro en tajadas y el huevo. 4. Sirve todo junto con el aguacate en rodajas."
+        },
+        "Ajiaco (versión sencilla)": {
+            "ingredientes": [
+                "pollo",
+                "papa",
+                "mazorca",
+                "cebolla",
+                "crema de leche",
+                "sal"
+            ],
+            "pasos": "1. Hierve el pollo con cebolla y sal. 2. Agrega la papa en trozos y la mazorca partida. 3. Cocina hasta que la papa se deshaga y espese. 4. Sirve con crema de leche."
+        },
+        "Arepa con queso": {
+            "ingredientes": [
+                "harina de maíz",
+                "queso",
+                "mantequilla",
+                "sal"
+            ],
+            "pasos": "1. Mezcla la harina con agua tibia y sal hasta formar una masa suave. 2. Forma arepas y ásalas en una sartén por ambos lados. 3. Ábrelas, ponles mantequilla y queso."
+        },
+        "Empanadas colombianas (versión sencilla)": {
+            "ingredientes": [
+                "harina de maíz",
+                "papa",
+                "carne molida",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Prepara un relleno con papa cocida, carne molida y cebolla sofrita. 2. Haz una masa con harina de maíz, agua y sal. 3. Rellena discos de masa, ciérralos y fríelas hasta que doren."
+        },
+        "Carne desmechada": {
+            "ingredientes": [
+                "carne de res",
+                "cebolla",
+                "tomate",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina la carne en agua con sal hasta que esté muy blanda y desmenúzala. 2. Haz un guiso con cebolla, tomate y ajo. 3. Agrega la carne y cocina unos minutos."
+        },
+        "Arroz con salchicha": {
+            "ingredientes": [
+                "arroz",
+                "salchicha",
+                "cebolla",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y tomate. 2. Agrega la salchicha en rodajas. 3. Añade el arroz y agua con sal. 4. Cocina tapado hasta que el arroz esté listo."
+        },
+        "Calentado": {
+            "ingredientes": [
+                "arroz",
+                "frijoles",
+                "huevo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Calienta en una sartén con aceite el arroz y los frijoles sobrantes. 2. Mezcla hasta que se integren. 3. Sirve con un huevo frito encima."
+        },
+        "Sopa de papa y queso": {
+            "ingredientes": [
+                "papa",
+                "cebolla",
+                "queso",
+                "leche",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe la cebolla. 2. Agrega la papa en cubos y agua con sal. 3. Cocina hasta que ablande y aplasta un poco. 4. Añade la leche y el queso y deja hervir unos minutos."
+        },
+        "Crema de ahuyama": {
+            "ingredientes": [
+                "ahuyama",
+                "cebolla",
+                "crema de leche",
+                "sal"
+            ],
+            "pasos": "1. Cocina la ahuyama en trozos con cebolla y sal. 2. Licúa hasta obtener una crema. 3. Calienta de nuevo y sirve con un poco de crema de leche."
+        },
+        "Pescado frito con patacón": {
+            "ingredientes": [
+                "pescado",
+                "plátano verde",
+                "limón",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sazona el pescado con limón y sal. 2. Fríelo hasta que quede dorado. 3. Prepara patacones con el plátano verde y sirve juntos."
+        },
+        "Arroz con camarones": {
+            "ingredientes": [
+                "arroz",
+                "camarones",
+                "cebolla",
+                "tomate",
+                "pimiento",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, tomate y pimiento. 2. Agrega los camarones y cocínalos un par de minutos. 3. Añade el arroz y agua con sal. 4. Cocina tapado hasta que esté listo."
+        },
+        "Sancocho de pescado": {
+            "ingredientes": [
+                "pescado",
+                "yuca",
+                "plátano verde",
+                "papa",
+                "cebolla",
+                "cilantro",
+                "sal"
+            ],
+            "pasos": "1. Hierve yuca, plátano y papa en agua con cebolla y sal. 2. Cuando estén casi blandos, agrega el pescado. 3. Cocina unos minutos más y sirve con cilantro."
+        },
+        "Carimañolas": {
+            "ingredientes": [
+                "yuca",
+                "carne molida",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina la yuca y aplástala hasta formar una masa. 2. Sofríe la carne con cebolla. 3. Rellena porciones de masa con la carne y dales forma alargada. 4. Fríelas hasta que doren."
+        },
+        "Arepa de choclo": {
+            "ingredientes": [
+                "mazorca",
+                "queso",
+                "mantequilla",
+                "azúcar",
+                "sal"
+            ],
+            "pasos": "1. Muele los granos de la mazorca con una pizca de azúcar y sal. 2. Forma arepas y cocínalas en una sartén con mantequilla. 3. Sírvelas con queso."
+        },
+        "Enyucado": {
+            "ingredientes": [
+                "yuca",
+                "queso",
+                "coco",
+                "azúcar",
+                "mantequilla"
+            ],
+            "pasos": "1. Ralla la yuca y el coco. 2. Mezcla con queso rallado, azúcar y mantequilla derretida. 3. Hornea hasta que dore por encima."
+        },
+        "Arroz con leche": {
+            "ingredientes": [
+                "arroz",
+                "leche",
+                "azúcar",
+                "canela"
+            ],
+            "pasos": "1. Cocina el arroz en agua hasta que ablande. 2. Agrega la leche, el azúcar y la canela. 3. Cocina a fuego bajo, revolviendo, hasta que espese."
+        },
+        "Papas chorreadas": {
+            "ingredientes": [
+                "papa",
+                "tomate",
+                "cebolla",
+                "queso",
+                "crema de leche",
+                "sal"
+            ],
+            "pasos": "1. Cocina las papas con sal. 2. Prepara una salsa con cebolla, tomate, queso y crema de leche. 3. Sirve la salsa caliente sobre las papas."
+        },
+        "Frijoles antioqueños": {
+            "ingredientes": [
+                "frijoles",
+                "tocineta",
+                "plátano verde",
+                "zanahoria",
+                "cebolla",
+                "tomate",
+                "sal"
+            ],
+            "pasos": "1. Cocina los frijoles con zanahoria y plátano verde en trozos hasta que ablanden. 2. Haz un sofrito de tocineta, cebolla y tomate. 3. Mézclalo con los frijoles y deja hervir hasta que espesen."
         }
     },
     "México": {
@@ -175,6 +368,275 @@
                 "sal"
             ],
             "pasos": "1. Corta las tortillas en triángulos y fríelas hasta que estén crujientes. 2. Prepara una salsa con tomate, cebolla y chile cocinados con sal. 3. Mezcla los totopos con la salsa y sirve enseguida."
+        },
+        "Tacos al pastor (versión sencilla)": {
+            "ingredientes": [
+                "cerdo",
+                "tortilla",
+                "cebolla",
+                "piña",
+                "cilantro",
+                "chile",
+                "sal"
+            ],
+            "pasos": "1. Marina el cerdo en tiras con chile, sal y un poco de piña picada. 2. Dóralo en una sartén bien caliente. 3. Sírvelo en tortillas con cebolla, cilantro y trozos de piña."
+        },
+        "Tacos de carne asada": {
+            "ingredientes": [
+                "carne de res",
+                "tortilla",
+                "cebolla",
+                "cilantro",
+                "limón",
+                "sal"
+            ],
+            "pasos": "1. Sazona la carne con sal y limón. 2. Ásala a fuego alto y córtala en trozos pequeños. 3. Sírvela en tortillas calientes con cebolla y cilantro picados."
+        },
+        "Enchiladas rojas": {
+            "ingredientes": [
+                "tortilla",
+                "pollo",
+                "tomate",
+                "chile",
+                "cebolla",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina y deshebra el pollo. 2. Licúa tomate, chile y cebolla y cocina la salsa con sal. 3. Pasa las tortillas por aceite, báñalas en salsa, rellénalas con pollo y enróllalas. 4. Cubre con más salsa y queso."
+        },
+        "Enchiladas suizas": {
+            "ingredientes": [
+                "tortilla",
+                "pollo",
+                "tomate",
+                "crema de leche",
+                "queso",
+                "cebolla",
+                "sal"
+            ],
+            "pasos": "1. Cocina y deshebra el pollo. 2. Licúa tomate con cebolla y sal y cocina la salsa. 3. Rellena las tortillas con el pollo y enróllalas. 4. Báñalas con la salsa y crema de leche, cubre con queso y gratina."
+        },
+        "Burritos de frijol": {
+            "ingredientes": [
+                "tortilla",
+                "frijoles",
+                "arroz",
+                "queso",
+                "cebolla"
+            ],
+            "pasos": "1. Cocina los frijoles y aplástalos un poco. 2. Calienta las tortillas. 3. Rellénalas con arroz, frijoles, queso y cebolla picada. 4. Enrolla y dora en una sartén."
+        },
+        "Nachos con queso": {
+            "ingredientes": [
+                "tortilla",
+                "queso",
+                "frijoles",
+                "chile"
+            ],
+            "pasos": "1. Corta las tortillas en triángulos y hornéalas o fríelas hasta que estén crujientes. 2. Cúbrelas con frijoles, queso y chile picado. 3. Gratina hasta que el queso se derrita."
+        },
+        "Pico de gallo": {
+            "ingredientes": [
+                "tomate",
+                "cebolla",
+                "cilantro",
+                "chile",
+                "limón",
+                "sal"
+            ],
+            "pasos": "1. Pica finamente tomate, cebolla, cilantro y chile. 2. Mezcla con jugo de limón y sal. 3. Deja reposar unos minutos antes de servir."
+        },
+        "Salsa roja": {
+            "ingredientes": [
+                "tomate",
+                "cebolla",
+                "ajo",
+                "chile",
+                "sal"
+            ],
+            "pasos": "1. Asa o cuece el tomate, la cebolla, el ajo y el chile. 2. Licúa con sal hasta obtener una salsa. 3. Hiérvela unos minutos para que tome sabor."
+        },
+        "Arroz rojo mexicano": {
+            "ingredientes": [
+                "arroz",
+                "tomate",
+                "cebolla",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora el arroz crudo en aceite. 2. Licúa tomate, cebolla y ajo y agrégalo al arroz. 3. Añade agua con sal. 4. Cocina tapado a fuego bajo hasta que se seque."
+        },
+        "Sopa de tortilla": {
+            "ingredientes": [
+                "tortilla",
+                "tomate",
+                "cebolla",
+                "ajo",
+                "chile",
+                "aguacate",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Fríe tiras de tortilla hasta que queden crujientes. 2. Licúa tomate, cebolla y ajo y cocínalos en aceite con agua y sal. 3. Sirve el caldo con las tortillas, aguacate, queso y chile."
+        },
+        "Pozole (versión sencilla)": {
+            "ingredientes": [
+                "cerdo",
+                "maíz pozolero",
+                "chile",
+                "cebolla",
+                "ajo",
+                "lechuga",
+                "sal"
+            ],
+            "pasos": "1. Cocina el cerdo con cebolla, ajo y sal hasta que esté blando. 2. Agrega el maíz pozolero y el chile y hierve hasta que el maíz se abra. 3. Sirve con lechuga picada."
+        },
+        "Tamales (versión sencilla)": {
+            "ingredientes": [
+                "harina de maíz",
+                "pollo",
+                "chile",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina y deshebra el pollo y mézclalo con una salsa de tomate y chile. 2. Prepara una masa con harina de maíz, aceite, sal y caldo. 3. Rellena porciones de masa con el pollo, envuélvelas en hojas de maíz y cocina al vapor."
+        },
+        "Esquites": {
+            "ingredientes": [
+                "mazorca",
+                "mantequilla",
+                "queso",
+                "chile",
+                "limón",
+                "sal"
+            ],
+            "pasos": "1. Desgrana la mazorca y saltea los granos en mantequilla. 2. Sirve en un vaso con queso, chile, limón y sal."
+        },
+        "Tostadas de tinga": {
+            "ingredientes": [
+                "tortilla",
+                "pollo",
+                "tomate",
+                "cebolla",
+                "chile",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina y deshebra el pollo. 2. Sofríe cebolla, tomate y chile y mezcla con el pollo. 3. Fríe las tortillas hasta que queden crujientes y cúbrelas con la tinga."
+        },
+        "Huevos a la mexicana": {
+            "ingredientes": [
+                "huevo",
+                "tomate",
+                "cebolla",
+                "chile",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, tomate y chile picados en aceite. 2. Agrega los huevos batidos con sal. 3. Revuelve hasta que cuajen."
+        },
+        "Molletes": {
+            "ingredientes": [
+                "pan",
+                "frijoles",
+                "queso"
+            ],
+            "pasos": "1. Unta frijoles cocidos y aplastados sobre rebanadas de pan. 2. Cubre con queso. 3. Gratina hasta que el queso se derrita."
+        },
+        "Chiles rellenos (versión sencilla)": {
+            "ingredientes": [
+                "chile",
+                "queso",
+                "huevo",
+                "harina de trigo",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Asa los chiles, pélalos y rellénalos con queso. 2. Pásalos por harina y por huevo batido y fríelos. 3. Sírvelos con una salsa de tomate cocida con sal."
+        },
+        "Sopa de frijol": {
+            "ingredientes": [
+                "frijoles",
+                "cebolla",
+                "ajo",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina los frijoles hasta que ablanden. 2. Sofríe cebolla, ajo y tomate. 3. Mezcla con los frijoles y su caldo y licúa si quieres una sopa más espesa."
+        },
+        "Chile con carne": {
+            "ingredientes": [
+                "carne molida",
+                "frijoles",
+                "tomate",
+                "cebolla",
+                "chile",
+                "ajo",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y ajo y agrega la carne molida. 2. Añade tomate picado y chile. 3. Incorpora los frijoles cocidos, agua y sal y cocina a fuego bajo hasta que espese."
+        },
+        "Tacos de papa": {
+            "ingredientes": [
+                "papa",
+                "tortilla",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina las papas, aplástalas y mézclalas con sal. 2. Rellena las tortillas con la papa y un poco de queso y ciérralas. 3. Fríelas hasta que doren."
+        },
+        "Fajitas de pollo": {
+            "ingredientes": [
+                "pollo",
+                "pimiento",
+                "cebolla",
+                "tortilla",
+                "limón",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta el pollo, el pimiento y la cebolla en tiras. 2. Saltéalos a fuego alto con sal y limón. 3. Sírvelos en tortillas calientes."
+        },
+        "Camarones al mojo de ajo": {
+            "ingredientes": [
+                "camarones",
+                "ajo",
+                "chile",
+                "limón",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora ajo laminado en aceite a fuego bajo. 2. Agrega los camarones y el chile y cocínalos unos minutos. 3. Termina con limón y sal."
+        },
+        "Pescado a la veracruzana (versión sencilla)": {
+            "ingredientes": [
+                "pescado",
+                "tomate",
+                "cebolla",
+                "aceitunas",
+                "alcaparras",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, ajo y tomate. 2. Agrega aceitunas y alcaparras. 3. Coloca el pescado sobre la salsa, tapa y cocina hasta que esté listo."
+        },
+        "Papas con chorizo": {
+            "ingredientes": [
+                "papa",
+                "chorizo",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina la papa en cubos. 2. Fríe el chorizo desmenuzado con cebolla. 3. Agrega la papa y mezcla hasta que se dore un poco."
         }
     },
     "Italia": {
@@ -215,6 +677,299 @@
                 "sal"
             ],
             "pasos": "1. Corta tomate y queso en rodajas. 2. Alterna las rodajas en un plato con hojas de albahaca. 3. Aliña con aceite y sal."
+        },
+        "Pasta alla Norma": {
+            "ingredientes": [
+                "pasta",
+                "berenjena",
+                "tomate",
+                "queso",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta la berenjena en cubos y fríela hasta que dore. 2. Haz una salsa con ajo y tomate. 3. Cocina la pasta y mézclala con la salsa y la berenjena. 4. Sirve con queso rallado."
+        },
+        "Penne all'arrabbiata": {
+            "ingredientes": [
+                "pasta",
+                "tomate",
+                "ajo",
+                "chile",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe ajo y chile en aceite. 2. Agrega el tomate picado y cocina hasta que haga salsa. 3. Mezcla con la pasta cocida."
+        },
+        "Pasta cacio e pepe": {
+            "ingredientes": [
+                "pasta",
+                "queso",
+                "pimienta",
+                "sal"
+            ],
+            "pasos": "1. Cocina la pasta en agua con sal y guarda un poco del agua. 2. Mezcla queso rallado con pimienta y un poco del agua de cocción hasta formar una crema. 3. Une con la pasta caliente."
+        },
+        "Pasta Alfredo": {
+            "ingredientes": [
+                "pasta",
+                "mantequilla",
+                "crema de leche",
+                "queso",
+                "sal"
+            ],
+            "pasos": "1. Cocina la pasta. 2. Derrite la mantequilla, agrega la crema de leche y deja espesar un poco. 3. Añade queso rallado y mezcla con la pasta."
+        },
+        "Lasaña de carne (versión sencilla)": {
+            "ingredientes": [
+                "pasta",
+                "carne molida",
+                "tomate",
+                "cebolla",
+                "leche",
+                "mantequilla",
+                "harina de trigo",
+                "queso",
+                "sal"
+            ],
+            "pasos": "1. Prepara una salsa de carne con cebolla y tomate. 2. Haz una bechamel con mantequilla, harina y leche. 3. Alterna capas de pasta, carne y bechamel. 4. Cubre con queso y hornea hasta que gratine."
+        },
+        "Spaghetti a la boloñesa": {
+            "ingredientes": [
+                "pasta",
+                "carne molida",
+                "tomate",
+                "cebolla",
+                "zanahoria",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, zanahoria y ajo picados. 2. Agrega la carne molida y cocínala. 3. Añade el tomate y cocina a fuego bajo hasta que espese. 4. Sirve sobre la pasta."
+        },
+        "Risotto de champiñones": {
+            "ingredientes": [
+                "arroz",
+                "champiñones",
+                "cebolla",
+                "mantequilla",
+                "queso",
+                "sal"
+            ],
+            "pasos": "1. Saltea cebolla y champiñones en mantequilla. 2. Agrega el arroz y revuelve un minuto. 3. Añade agua caliente poco a poco, revolviendo, hasta que el arroz esté cremoso. 4. Termina con queso."
+        },
+        "Minestrone": {
+            "ingredientes": [
+                "papa",
+                "zanahoria",
+                "calabacín",
+                "frijoles",
+                "pasta",
+                "tomate",
+                "cebolla",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y ajo. 2. Agrega las verduras en cubos, el tomate y agua con sal. 3. Cuando estén casi blandas, añade los frijoles cocidos y la pasta. 4. Cocina hasta que la pasta esté lista."
+        },
+        "Pasta e fagioli": {
+            "ingredientes": [
+                "pasta",
+                "frijoles",
+                "tomate",
+                "cebolla",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y ajo y agrega el tomate. 2. Añade los frijoles cocidos y agua. 3. Incorpora la pasta y cocina hasta que espese."
+        },
+        "Bruschetta": {
+            "ingredientes": [
+                "pan",
+                "tomate",
+                "ajo",
+                "albahaca",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Tuesta el pan y frótalo con ajo. 2. Mezcla tomate picado con albahaca, aceite y sal. 3. Coloca la mezcla sobre el pan."
+        },
+        "Pizza margarita (casera)": {
+            "ingredientes": [
+                "harina de trigo",
+                "levadura",
+                "tomate",
+                "queso",
+                "albahaca",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Amasa harina, levadura, agua, aceite y sal y deja reposar hasta que crezca. 2. Estira la masa y cúbrela con tomate triturado. 3. Agrega queso y hornea bien caliente. 4. Termina con hojas de albahaca."
+        },
+        "Focaccia": {
+            "ingredientes": [
+                "harina de trigo",
+                "levadura",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Amasa harina, levadura, agua, aceite y sal y deja reposar hasta que duplique su tamaño. 2. Extiéndela en una bandeja, haz hoyitos con los dedos y báñala con aceite y sal. 3. Hornea hasta que dore."
+        },
+        "Gnocchi de papa": {
+            "ingredientes": [
+                "papa",
+                "harina de trigo",
+                "huevo",
+                "queso",
+                "sal"
+            ],
+            "pasos": "1. Cocina las papas y haz un puré. 2. Mezcla con harina, huevo, queso y sal hasta formar una masa. 3. Forma rollos, corta trozos y hiérvelos hasta que floten."
+        },
+        "Pollo a la parmesana": {
+            "ingredientes": [
+                "pollo",
+                "huevo",
+                "pan",
+                "tomate",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Pasa el pollo por huevo batido y pan rallado y fríelo. 2. Cúbrelo con salsa de tomate y queso. 3. Hornea hasta que el queso se derrita."
+        },
+        "Pollo a la cacciatora": {
+            "ingredientes": [
+                "pollo",
+                "tomate",
+                "cebolla",
+                "pimiento",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora el pollo en aceite. 2. Agrega cebolla, pimiento y ajo y sofríe. 3. Añade el tomate, tapa y cocina a fuego bajo hasta que el pollo esté blando."
+        },
+        "Pasta con atún": {
+            "ingredientes": [
+                "pasta",
+                "atún",
+                "tomate",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe ajo en aceite y agrega el tomate. 2. Añade el atún escurrido y cocina unos minutos. 3. Mezcla con la pasta cocida."
+        },
+        "Pasta con brócoli": {
+            "ingredientes": [
+                "pasta",
+                "brócoli",
+                "ajo",
+                "chile",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina el brócoli junto con la pasta en el mismo agua. 2. Sofríe ajo y chile en aceite. 3. Mezcla todo y sirve con queso rallado."
+        },
+        "Pasta al pesto": {
+            "ingredientes": [
+                "pasta",
+                "albahaca",
+                "ajo",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Tritura albahaca, ajo, queso, aceite y sal hasta formar una salsa. 2. Cocina la pasta y mézclala con el pesto."
+        },
+        "Pasta con camarones": {
+            "ingredientes": [
+                "pasta",
+                "camarones",
+                "ajo",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe ajo en aceite y agrega los camarones. 2. Añade el tomate picado y cocina hasta que haga salsa. 3. Mezcla con la pasta cocida."
+        },
+        "Frittata de queso y cebolla": {
+            "ingredientes": [
+                "huevo",
+                "cebolla",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe la cebolla en aceite. 2. Agrega los huevos batidos con queso y sal. 3. Cocina a fuego bajo hasta que cuaje y dora un poco por ambos lados."
+        },
+        "Panzanella": {
+            "ingredientes": [
+                "pan",
+                "tomate",
+                "pepino",
+                "cebolla",
+                "albahaca",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta el pan en cubos y tuéstalo. 2. Mezcla con tomate, pepino y cebolla en trozos. 3. Aliña con aceite y sal y agrega albahaca."
+        },
+        "Sopa de tomate": {
+            "ingredientes": [
+                "tomate",
+                "cebolla",
+                "ajo",
+                "albahaca",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y ajo. 2. Agrega el tomate picado y agua con sal y cocina 20 minutos. 3. Licúa y sirve con albahaca."
+        },
+        "Berenjenas a la parmesana": {
+            "ingredientes": [
+                "berenjena",
+                "tomate",
+                "queso",
+                "albahaca",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta la berenjena en rodajas y dórala. 2. Alterna capas de berenjena, salsa de tomate y queso. 3. Hornea hasta que gratine y termina con albahaca."
+        },
+        "Polenta con queso": {
+            "ingredientes": [
+                "harina de maíz",
+                "queso",
+                "mantequilla",
+                "sal"
+            ],
+            "pasos": "1. Hierve agua con sal y agrega la harina de maíz en lluvia, revolviendo. 2. Cocina hasta que espese. 3. Termina con mantequilla y queso."
+        },
+        "Pasta con espinacas": {
+            "ingredientes": [
+                "pasta",
+                "espinaca",
+                "ajo",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe ajo en aceite y agrega la espinaca hasta que se marchite. 2. Mezcla con la pasta cocida. 3. Sirve con queso rallado."
+        },
+        "Arancini": {
+            "ingredientes": [
+                "arroz",
+                "queso",
+                "huevo",
+                "pan",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina el arroz y mézclalo con queso y un huevo. 2. Forma bolitas, pásalas por huevo y pan rallado. 3. Fríelas hasta que doren."
         }
     },
     "España": {
@@ -259,6 +1014,293 @@
                 "sal"
             ],
             "pasos": "1. Dora el pollo en trozos en aceite. 2. Agrega ajo, pimiento y tomate picados y sofríe. 3. Añade el arroz y el doble de agua con sal. 4. Cocina sin revolver hasta que el arroz esté listo."
+        },
+        "Salmorejo": {
+            "ingredientes": [
+                "tomate",
+                "pan",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Remoja el pan en agua y escúrrelo. 2. Licúa tomate, pan, ajo, aceite y sal hasta obtener una crema espesa. 3. Enfría antes de servir."
+        },
+        "Pan con tomate": {
+            "ingredientes": [
+                "pan",
+                "tomate",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Tuesta el pan. 2. Frótalo con ajo y luego con tomate maduro. 3. Termina con aceite y sal."
+        },
+        "Patatas bravas": {
+            "ingredientes": [
+                "papa",
+                "tomate",
+                "ajo",
+                "chile",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Fríe la papa en cubos hasta que dore. 2. Prepara una salsa con tomate, ajo y chile cocinados con sal. 3. Sirve la salsa sobre las papas."
+        },
+        "Croquetas de jamón": {
+            "ingredientes": [
+                "jamón",
+                "harina de trigo",
+                "leche",
+                "mantequilla",
+                "cebolla",
+                "huevo",
+                "pan",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla en mantequilla, agrega harina y luego leche hasta hacer una masa espesa con el jamón picado. 2. Enfría la masa y forma croquetas. 3. Pásalas por huevo y pan rallado y fríelas."
+        },
+        "Albóndigas en salsa": {
+            "ingredientes": [
+                "carne molida",
+                "huevo",
+                "pan",
+                "cebolla",
+                "ajo",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Mezcla carne, huevo, pan rallado, ajo picado y sal y forma bolitas. 2. Dóralas en aceite. 3. Cocínalas en una salsa de cebolla y tomate hasta que estén listas."
+        },
+        "Calamares fritos": {
+            "ingredientes": [
+                "calamares",
+                "harina de trigo",
+                "limón",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta los calamares en anillos y sécalos. 2. Pásalos por harina con sal. 3. Fríelos en aceite bien caliente y sirve con limón."
+        },
+        "Gambas al ajillo": {
+            "ingredientes": [
+                "camarones",
+                "ajo",
+                "chile",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Calienta abundante aceite con ajo laminado y chile. 2. Agrega los camarones y cocina un par de minutos. 3. Sirve de inmediato en la misma cazuelita."
+        },
+        "Champiñones al ajillo": {
+            "ingredientes": [
+                "champiñones",
+                "ajo",
+                "perejil",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora ajo en aceite. 2. Agrega los champiñones y saltea hasta que suelten el agua y se doren. 3. Termina con perejil y sal."
+        },
+        "Pimientos fritos": {
+            "ingredientes": [
+                "pimiento",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Fríe los pimientos enteros o en tiras en aceite a fuego medio. 2. Cuando estén blandos y ligeramente dorados, retíralos y espolvorea con sal."
+        },
+        "Fabada (versión sencilla)": {
+            "ingredientes": [
+                "frijoles",
+                "chorizo",
+                "tocineta",
+                "cebolla",
+                "ajo",
+                "sal"
+            ],
+            "pasos": "1. Remoja los frijoles desde la noche anterior. 2. Cocínalos con chorizo, tocineta, cebolla y ajo a fuego bajo durante un par de horas. 3. Ajusta de sal y sirve caliente."
+        },
+        "Cocido (versión sencilla)": {
+            "ingredientes": [
+                "garbanzos",
+                "papa",
+                "zanahoria",
+                "pollo",
+                "chorizo",
+                "cebolla",
+                "sal"
+            ],
+            "pasos": "1. Remoja los garbanzos. 2. Cocínalos con el pollo, el chorizo, la cebolla y la zanahoria. 3. Agrega la papa cuando falte poco y cocina hasta que todo esté blando."
+        },
+        "Lentejas con chorizo": {
+            "ingredientes": [
+                "lentejas",
+                "chorizo",
+                "papa",
+                "zanahoria",
+                "cebolla",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y ajo. 2. Agrega lentejas, chorizo, papa y zanahoria con agua. 3. Cocina hasta que las lentejas estén blandas."
+        },
+        "Garbanzos con espinacas": {
+            "ingredientes": [
+                "garbanzos",
+                "espinaca",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe ajo en aceite. 2. Agrega la espinaca hasta que se marchite. 3. Añade los garbanzos cocidos y cocina unos minutos con sal."
+        },
+        "Sopa de ajo": {
+            "ingredientes": [
+                "pan",
+                "ajo",
+                "huevo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora ajo laminado y trozos de pan en aceite. 2. Agrega agua con sal y hierve 10 minutos. 3. Incorpora el huevo batido removiendo y sirve caliente."
+        },
+        "Huevos a la flamenca": {
+            "ingredientes": [
+                "huevo",
+                "tomate",
+                "pimiento",
+                "chorizo",
+                "arvejas",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, pimiento y chorizo y agrega el tomate. 2. Añade las arvejas. 3. Rompe los huevos encima y hornea o tapa hasta que cuajen."
+        },
+        "Revuelto de champiñones": {
+            "ingredientes": [
+                "huevo",
+                "champiñones",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Saltea ajo y champiñones en aceite. 2. Agrega los huevos batidos con sal. 3. Revuelve hasta que cuajen."
+        },
+        "Arroz a la cubana": {
+            "ingredientes": [
+                "arroz",
+                "huevo",
+                "plátano maduro",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina el arroz. 2. Prepara una salsa de tomate con sal. 3. Fríe los huevos y el plátano maduro. 4. Sirve el arroz con la salsa, el huevo y el plátano."
+        },
+        "Pisto manchego": {
+            "ingredientes": [
+                "tomate",
+                "pimiento",
+                "calabacín",
+                "cebolla",
+                "huevo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, pimiento y calabacín picados. 2. Agrega el tomate y cocina a fuego bajo hasta que se integre. 3. Sirve con un huevo frito encima."
+        },
+        "Escalivada": {
+            "ingredientes": [
+                "berenjena",
+                "pimiento",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Asa las berenjenas, los pimientos y la cebolla hasta que estén blandos. 2. Pélalos y córtalos en tiras. 3. Aliña con aceite y sal."
+        },
+        "Ensalada mixta": {
+            "ingredientes": [
+                "lechuga",
+                "tomate",
+                "cebolla",
+                "atún",
+                "huevo",
+                "aceitunas",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Pica lechuga, tomate y cebolla. 2. Agrega atún, huevo cocido en trozos y aceitunas. 3. Aliña con aceite y sal."
+        },
+        "Ensaladilla rusa": {
+            "ingredientes": [
+                "papa",
+                "zanahoria",
+                "atún",
+                "huevo",
+                "arvejas",
+                "mayonesa",
+                "sal"
+            ],
+            "pasos": "1. Cocina papa, zanahoria, arvejas y huevo y córtalos en cubos. 2. Mezcla con atún y mayonesa. 3. Ajusta de sal y enfría."
+        },
+        "Pescado al ajillo": {
+            "ingredientes": [
+                "pescado",
+                "ajo",
+                "limón",
+                "perejil",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sazona el pescado con sal y limón. 2. Dóralo en aceite. 3. Agrega ajo laminado y perejil y cocina un minuto más."
+        },
+        "Pollo al ajillo": {
+            "ingredientes": [
+                "pollo",
+                "ajo",
+                "perejil",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sazona el pollo en trozos con sal y dóralo en aceite. 2. Agrega muchos dientes de ajo y cocina tapado a fuego bajo. 3. Termina con perejil."
+        },
+        "Pollo a la chilindrón": {
+            "ingredientes": [
+                "pollo",
+                "tomate",
+                "pimiento",
+                "cebolla",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora el pollo en trozos. 2. Sofríe cebolla, pimiento y ajo y agrega el tomate. 3. Une el pollo con la salsa y cocina tapado hasta que esté blando."
+        },
+        "Arroz con mariscos": {
+            "ingredientes": [
+                "arroz",
+                "camarones",
+                "calamares",
+                "tomate",
+                "ajo",
+                "pimiento",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe ajo, pimiento y tomate. 2. Agrega camarones y calamares y cocina un poco. 3. Añade el arroz y agua con sal. 4. Cocina sin revolver hasta que esté listo."
+        },
+        "Tortilla francesa": {
+            "ingredientes": [
+                "huevo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Bate los huevos con sal. 2. Viértelos en una sartén con un poco de aceite. 3. Cuando cuaje, dobla por la mitad y sirve."
         }
     },
     "Perú": {
@@ -276,7 +1318,7 @@
             "ingredientes": [
                 "papa",
                 "queso",
-                "aji amarillo",
+                "ají amarillo",
                 "huevo",
                 "leche"
             ],
@@ -284,7 +1326,7 @@
         },
         "Lomo saltado": {
             "ingredientes": [
-                "carne",
+                "carne de res",
                 "cebolla",
                 "tomate",
                 "papa",
@@ -293,6 +1335,348 @@
                 "sal"
             ],
             "pasos": "1. Fríe la papa en bastones. 2. Saltea la carne en tiras a fuego alto con sal. 3. Agrega cebolla y tomate en gajos y la salsa de soya. 4. Mezcla con las papas fritas y sirve de inmediato."
+        },
+        "Ceviche de pescado": {
+            "ingredientes": [
+                "pescado",
+                "limón",
+                "cebolla",
+                "ají amarillo",
+                "cilantro",
+                "sal"
+            ],
+            "pasos": "1. Corta el pescado fresco en cubos y sazona con sal. 2. Cúbrelo con jugo de limón y mezcla con cebolla en tiras, ají y cilantro. 3. Deja reposar unos minutos y sirve de inmediato."
+        },
+        "Ají de gallina (versión sencilla)": {
+            "ingredientes": [
+                "pollo",
+                "ají amarillo",
+                "pan",
+                "leche",
+                "cebolla",
+                "ajo",
+                "queso",
+                "papa",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina y deshebra el pollo. 2. Licúa pan remojado en leche con ají amarillo, queso y ajo. 3. Sofríe cebolla, agrega la crema y el pollo y cocina hasta espesar. 4. Sirve con papa cocida."
+        },
+        "Causa limeña": {
+            "ingredientes": [
+                "papa",
+                "ají amarillo",
+                "limón",
+                "atún",
+                "aguacate",
+                "mayonesa",
+                "sal"
+            ],
+            "pasos": "1. Cocina las papas y haz un puré con ají amarillo, limón, aceite y sal. 2. Mezcla el atún con mayonesa. 3. Arma capas de puré, atún y aguacate y enfría antes de servir."
+        },
+        "Arroz con pollo peruano": {
+            "ingredientes": [
+                "arroz",
+                "pollo",
+                "cilantro",
+                "arvejas",
+                "zanahoria",
+                "cebolla",
+                "ajo",
+                "ají amarillo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora el pollo. 2. Licúa cilantro con ají y sofríe con cebolla y ajo. 3. Agrega el arroz, el pollo, las arvejas, la zanahoria y agua. 4. Cocina tapado hasta que el arroz esté listo."
+        },
+        "Tallarines verdes": {
+            "ingredientes": [
+                "pasta",
+                "espinaca",
+                "albahaca",
+                "queso",
+                "leche",
+                "ajo",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina la pasta. 2. Licúa espinaca, albahaca, queso, leche, ajo y cebolla sofrita hasta formar una salsa verde. 3. Mezcla con la pasta caliente."
+        },
+        "Tallarín saltado": {
+            "ingredientes": [
+                "pasta",
+                "carne de res",
+                "cebolla",
+                "tomate",
+                "salsa de soya",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina la pasta. 2. Saltea la carne en tiras a fuego alto con sal. 3. Agrega cebolla, tomate y salsa de soya. 4. Mezcla con la pasta."
+        },
+        "Tacu tacu": {
+            "ingredientes": [
+                "arroz",
+                "frijoles",
+                "cebolla",
+                "ajo",
+                "ají amarillo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, ajo y ají. 2. Agrega arroz y frijoles cocidos y mezcla bien. 3. Forma una torta y dórala en una sartén por ambos lados."
+        },
+        "Papa rellena": {
+            "ingredientes": [
+                "papa",
+                "carne molida",
+                "cebolla",
+                "huevo",
+                "aceitunas",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina las papas, hazlas puré y déjalas enfriar. 2. Prepara un relleno con carne, cebolla, aceitunas y huevo cocido en trozos. 3. Envuelve el relleno con puré, dale forma ovalada y fríe hasta que dore."
+        },
+        "Anticuchos de carne": {
+            "ingredientes": [
+                "carne de res",
+                "ajo",
+                "ají amarillo",
+                "vinagre",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Marina la carne en cubos con ajo, ají, vinagre, aceite y sal. 2. Ensártala en palitos. 3. Ásala a fuego alto, dándole vuelta."
+        },
+        "Pollo a la brasa (casero)": {
+            "ingredientes": [
+                "pollo",
+                "ajo",
+                "salsa de soya",
+                "vinagre",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Marina el pollo con ajo, salsa de soya, vinagre, aceite y sal durante varias horas. 2. Hornéalo a temperatura alta hasta que la piel quede dorada y la carne cocida."
+        },
+        "Chupe de camarones (versión sencilla)": {
+            "ingredientes": [
+                "camarones",
+                "papa",
+                "queso",
+                "leche",
+                "huevo",
+                "cebolla",
+                "arroz",
+                "ají amarillo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y ají. 2. Agrega agua, papa y arroz y cocina. 3. Añade los camarones, la leche y el queso. 4. Incorpora un huevo batido o escalfado y sirve caliente."
+        },
+        "Sudado de pescado": {
+            "ingredientes": [
+                "pescado",
+                "tomate",
+                "cebolla",
+                "ají amarillo",
+                "cilantro",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, ajo, ají y tomate. 2. Coloca el pescado encima, agrega un poco de agua y cilantro. 3. Tapa y cocina a fuego bajo hasta que esté listo."
+        },
+        "Pollo en escabeche": {
+            "ingredientes": [
+                "pollo",
+                "cebolla",
+                "ají amarillo",
+                "vinagre",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora el pollo en trozos. 2. Sofríe cebolla en tiras con ajo y ají y agrega el vinagre. 3. Cocina el pollo en esa salsa hasta que esté blando."
+        },
+        "Seco de carne": {
+            "ingredientes": [
+                "carne de res",
+                "cilantro",
+                "cebolla",
+                "ajo",
+                "ají amarillo",
+                "arvejas",
+                "papa",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora la carne en trozos. 2. Licúa cilantro con ají y agrégalos junto con cebolla y ajo sofritos. 3. Añade agua, papa y arvejas y cocina hasta que todo esté blando."
+        },
+        "Estofado de pollo": {
+            "ingredientes": [
+                "pollo",
+                "papa",
+                "zanahoria",
+                "arvejas",
+                "tomate",
+                "cebolla",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora el pollo. 2. Sofríe cebolla, ajo y tomate. 3. Agrega papa, zanahoria, arvejas y agua. 4. Cocina tapado hasta que todo esté blando."
+        },
+        "Sopa a la minuta": {
+            "ingredientes": [
+                "carne de res",
+                "pasta",
+                "papa",
+                "cebolla",
+                "ajo",
+                "leche",
+                "huevo",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y ajo y agrega la carne en trozos pequeños. 2. Añade agua y papa en cubos. 3. Incorpora la pasta y la leche. 4. Termina con un huevo batido."
+        },
+        "Aguadito de pollo": {
+            "ingredientes": [
+                "pollo",
+                "arroz",
+                "cilantro",
+                "arvejas",
+                "zanahoria",
+                "papa",
+                "ajo",
+                "cebolla",
+                "ají amarillo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, ajo y ají. 2. Agrega el pollo, agua, cilantro licuado y las verduras. 3. Añade el arroz y cocina hasta que todo esté blando."
+        },
+        "Ocopa": {
+            "ingredientes": [
+                "papa",
+                "queso",
+                "maní",
+                "ají amarillo",
+                "huevo",
+                "leche",
+                "ajo",
+                "sal"
+            ],
+            "pasos": "1. Cocina las papas y los huevos. 2. Licúa maní, queso, ají amarillo, ajo y leche hasta formar una crema. 3. Sirve las papas con la crema por encima y el huevo."
+        },
+        "Choritos a la chalaca": {
+            "ingredientes": [
+                "mejillones",
+                "cebolla",
+                "tomate",
+                "limón",
+                "cilantro",
+                "ají amarillo",
+                "sal"
+            ],
+            "pasos": "1. Cocina los mejillones al vapor hasta que se abran. 2. Mezcla cebolla, tomate y cilantro picados con limón, ají y sal. 3. Sirve la mezcla sobre los mejillones."
+        },
+        "Chicharrón de pescado": {
+            "ingredientes": [
+                "pescado",
+                "harina de trigo",
+                "limón",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sazona el pescado en trozos con ajo, limón y sal. 2. Pásalo por harina. 3. Fríelo en aceite caliente hasta que quede crujiente."
+        },
+        "Arroz con mariscos": {
+            "ingredientes": [
+                "arroz",
+                "camarones",
+                "calamares",
+                "cebolla",
+                "ajo",
+                "ají amarillo",
+                "cilantro",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla, ajo y ají. 2. Agrega los mariscos y cocina un poco. 3. Añade el arroz, agua y cilantro licuado. 4. Cocina tapado hasta que el arroz esté listo."
+        },
+        "Arroz tapado": {
+            "ingredientes": [
+                "arroz",
+                "carne molida",
+                "cebolla",
+                "huevo",
+                "aceitunas",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Prepara un picadillo con carne, cebolla, ajo, aceitunas y huevo cocido en trozos. 2. Cocina el arroz. 3. Pon una capa de arroz en un molde, el picadillo y otra capa de arroz. 4. Presiona y vuelca en el plato."
+        },
+        "Pollo saltado": {
+            "ingredientes": [
+                "pollo",
+                "cebolla",
+                "tomate",
+                "papa",
+                "salsa de soya",
+                "vinagre",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Fríe la papa en bastones. 2. Saltea el pollo en tiras a fuego alto con sal. 3. Agrega cebolla, tomate, salsa de soya y vinagre. 4. Mezcla con las papas."
+        },
+        "Salchipapa": {
+            "ingredientes": [
+                "papa",
+                "salchicha",
+                "huevo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Fríe la papa en bastones con sal. 2. Fríe la salchicha en rodajas. 3. Mezcla y sirve con un huevo frito encima."
+        },
+        "Palta rellena": {
+            "ingredientes": [
+                "aguacate",
+                "pollo",
+                "mayonesa",
+                "arvejas",
+                "zanahoria",
+                "sal"
+            ],
+            "pasos": "1. Cocina y deshebra el pollo y mézclalo con mayonesa, arvejas y zanahoria cocidas. 2. Parte el aguacate por la mitad y quita la semilla. 3. Rellena con la mezcla."
+        },
+        "Tortilla de espinaca": {
+            "ingredientes": [
+                "huevo",
+                "espinaca",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Saltea cebolla y espinaca en aceite. 2. Agrega los huevos batidos con sal. 3. Cocina por ambos lados hasta que cuaje."
+        },
+        "Sopa de quinua": {
+            "ingredientes": [
+                "quinua",
+                "papa",
+                "zanahoria",
+                "cebolla",
+                "ajo",
+                "queso",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y ajo. 2. Agrega agua, papa, zanahoria y quinua lavada. 3. Cocina hasta que todo esté blando y sirve con queso."
         }
     }
 }
