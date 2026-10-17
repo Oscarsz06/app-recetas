@@ -14,5 +14,45 @@
     "Patacones": {
         "ingredientes": ["platano verde", "aceite", "sal"],
         "pasos": "1. Corta el plátano en rodajas gruesas. 2. Fríe. 3. Aplasta, fríe de nuevo y sala."
+    },
+    "Arepa de huevo": {
+        "ingredientes": ["harina de maiz", "huevo", "aceite", "sal"],
+        "pasos": "1. Mezcla la harina con agua y sal hasta tener una masa suave. 2. Forma arepas redondas y fríelas. 3. Ábrelas por un lado, mete un huevo crudo y fríe de nuevo hasta que cuaje."
+    },
+    "Arroz de coco": {
+        "ingredientes": ["arroz", "leche de coco", "azucar", "sal"],
+        "pasos": "1. Cocina la leche de coco con una pizca de sal y azúcar. 2. Agrega el arroz y cocina a fuego bajo hasta que se seque."
+    },
+    "Platano maduro frito": {
+        "ingredientes": ["platano maduro", "aceite"],
+        "pasos": "1. Corta el plátano maduro en tajadas. 2. Fríe a fuego medio hasta que doren por ambos lados."
+    },
+    "Pollo guisado": {
+        "ingredientes": ["pollo", "papa", "tomate", "cebolla", "aceite", "sal"],
+        "pasos": "1. Sofríe cebolla y tomate en aceite. 2. Agrega el pollo en presas y dóralo. 3. Añade la papa en trozos y un poco de agua. 4. Cocina tapado hasta que el pollo y la papa estén blandos."
+    },
+    "Arroz con pollo": {
+        "ingredientes": ["arroz", "pollo", "cebolla", "tomate", "aceite", "sal"],
+        "pasos": "1. Sofríe cebolla y tomate. 2. Agrega el pollo en trozos y cocínalo. 3. Añade el arroz y agua. 4. Cocina tapado hasta que el arroz esté listo."
+    },
+    "Sancocho de pollo": {
+        "ingredientes": ["pollo", "papa", "yuca", "platano verde", "cebolla", "sal"],
+        "pasos": "1. Pon a hervir el pollo con cebolla y sal. 2. Agrega yuca, papa y plátano en trozos. 3. Cocina hasta que todo esté blando."
+    },
+    "Lentejas guisadas": {
+        "ingredientes": ["lentejas", "cebolla", "tomate", "aceite", "sal"],
+        "pasos": "1. Cocina las lentejas en agua hasta que ablanden. 2. Haz un sofrito de cebolla y tomate en aceite. 3. Mézclalo con las lentejas y deja hervir unos minutos con sal."
+    },
+    "Tortilla de papa": {
+        "ingredientes": ["papa", "huevo", "cebolla", "aceite", "sal"],
+        "pasos": "1. Corta la papa y la cebolla en láminas finas y fríelas a fuego bajo. 2. Mézclalas con los huevos batidos y sal. 3. Cuaja la mezcla en la sartén por ambos lados."
+    },
+    "Pasta con tomate": {
+        "ingredientes": ["pasta", "tomate", "cebolla", "aceite", "sal"],
+        "pasos": "1. Cocina la pasta en agua con sal. 2. Sofríe cebolla y tomate picados hasta que hagan salsa. 3. Mezcla la pasta con la salsa."
+    },
+    "Arroz con atun": {
+        "ingredientes": ["arroz", "atun", "cebolla", "tomate", "aceite", "sal"],
+        "pasos": "1. Sofríe cebolla y tomate. 2. Agrega el atún escurrido. 3. Mezcla con el arroz ya cocido."
     }
 }
