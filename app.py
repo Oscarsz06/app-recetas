@@ -1,4 +1,5 @@
 import unicodedata
+import json
 
 def limpiar(texto):
     texto = texto.strip().lower()
@@ -7,24 +8,8 @@ def limpiar(texto):
 
 basicos = ["aceite", "sal"]
 
-recetas = {
-    "Arroz con huevo": {
-        "ingredientes": ["arroz", "huevo", "aceite", "sal"],
-        "pasos": "1. Cocina el arroz. 2. Fríe los huevos en aceite. 3. Sirve juntos con sal.",
-    },
-    "Huevos pericos": {
-        "ingredientes": ["huevo", "tomate", "cebolla", "aceite", "sal"],
-        "pasos": "1. Pica tomate y cebolla. 2. Sofríelos en aceite. 3. Agrega los huevos batidos y revuelve hasta que cuajen.",
-    },
-    "Yuca frita": {
-        "ingredientes": ["yuca", "aceite", "sal"],
-        "pasos": "1. Cocinaa yuca en agua con sal. 2. Córtala en tiras. 3. Fríela hasta que dore.",
-    },
-    "Patacones": {
-        "ingredientes": ["platano verde", "aceite", "sal"],
-        "pasos": "1. Corta el plátano en rodajas gruesas. 2. Fríe. 3. Aplasta, fríe de nuevo y sala.",
-    },
-}
+with open("recetas.json", encoding="utf-8") as archivo:
+    recetas = json.load(archivo)
 
 print("Escribe los ingredientes que compraste, separados por coma.")
 entrada = input("Ingredientes: ")
