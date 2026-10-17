@@ -1,10 +1,16 @@
 import unicodedata
 import json
 
+def singular(palabra):
+    if len(palabra) > 3 and palabra.endswith("s"):
+        return palabra[:-1]
+    return palabra
+
 def limpiar(texto):
     texto = texto.strip().lower()
     texto = unicodedata.normalize("NFD", texto)
-    return "".join(c for c in texto if unicodedata.category(c) != "Mn")
+    texto = "".join(c for c in texto if unicodedata.category(c) != "Mn")
+    return " ".join(singular(p) for p in texto.split())
 
 basicos = ["aceite", "sal"]
 
@@ -19,7 +25,7 @@ completas = []
 casi = []
 
 for nombre, datos in recetas.items():
-    faltan = [i for i in datos["ingredientes"] if i not in tengo and i not in basicos]
+    faltan = [i for i in datos["ingredientes"] if limpiar(i) not in tengo and limpiar(i) not in basicos]
     if not faltan:
         completas.append((nombre, datos))
     elif len(faltan) == 1:
