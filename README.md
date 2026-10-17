@@ -6,6 +6,7 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 
 ## Qué hace
 
+- En la web, al elegir una región se ven todos sus platos, y cada ingrediente que agregas reduce la lista a los platos que lo usan. Un interruptor permite ver solo lo que ya puedes preparar con tus ingredientes.
 - En la web, la región (Colombia, México, Italia, España o Perú) es opcional: sin elegir ninguna busca en todas, y al elegir una botón filtra solo esa región. En la terminal la región se elige al inicio.
 - Incluye 150 recetas (30 por región).
 - En la web eliges los ingredientes desde una lista, agregando y quitando los que quieras. En la terminal los escribes separados por coma.

@@ -64,3 +64,25 @@ def buscar_en_regiones(recetas_por_region, regiones, tengo):
         completas += [(region, nombre, datos) for nombre, datos in comp]
         casi += [(region, nombre, falta) for nombre, falta in parcial]
     return completas, casi
+
+
+def platos_filtrados(recetas_por_region, regiones, tengo):
+    """Platos que usan TODOS los ingredientes elegidos.
+
+    Si no se eligió ningún ingrediente, devuelve todos los platos de las regiones.
+    Cada elemento es (region, nombre, datos, faltan), ordenado de menos a más
+    ingredientes faltantes.
+    """
+    resultado = []
+    for region in regiones:
+        for nombre, datos in recetas_por_region[region].items():
+            claves = [limpiar(i) for i in datos["ingredientes"]]
+            if not all(ing in claves for ing in tengo):
+                continue
+            faltan = [
+                i for i in datos["ingredientes"]
+                if limpiar(i) not in tengo and limpiar(i) not in BASICOS
+            ]
+            resultado.append((region, nombre, datos, faltan))
+    resultado.sort(key=lambda plato: (len(plato[3]), plato[1]))
+    return resultado

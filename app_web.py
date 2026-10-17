@@ -7,6 +7,7 @@ from logica import (
     catalogo_ingredientes,
     cargar_recetas,
     limpiar,
+    platos_filtrados,
 )
 
 st.set_page_config(page_title="App de Recetas", page_icon="🍳")
@@ -22,13 +23,25 @@ def pasos_en_lista(texto):
     return [p.strip() for p in partes if p.strip()]
 
 
+def mostrar_pasos(datos):
+    for paso in pasos_en_lista(datos["pasos"]):
+        st.write(paso)
+
+
 recetas_por_region = datos_recetas()
 regiones = list(recetas_por_region.keys())
 catalogo = catalogo_ingredientes(recetas_por_region)
 opciones = sorted(catalogo.values(), key=limpiar)
 
 st.title("🍳 App de Recetas")
-st.write("Agrega los ingredientes que tienes y te digo qué puedes cocinar. Si quieres, filtra por región.")
+st.write("Elige una región para ver sus platos y agrega ingredientes para ir reduciendo la lista.")
+
+region = st.pills(
+    "Región (opcional)",
+    regiones,
+    selection_mode="single",
+    help="Elige una región para ver sus platos. Haz clic otra vez para quitar el filtro y ver todas.",
+)
 
 seleccion = st.multiselect(
     "Ingredientes que tienes",
@@ -38,33 +51,60 @@ seleccion = st.multiselect(
 )
 st.caption("Aceite y sal se dan por sentados, no hace falta agregarlos.")
 
-region = st.pills(
-    "Región (opcional)",
-    regiones,
-    selection_mode="single",
-    help="Elige una región para filtrar. Haz clic otra vez para quitar el filtro y ver todas.",
+solo_preparables = st.toggle(
+    "Mostrar solo lo que ya puedo preparar",
+    help="Muestra los platos que puedes hacer con tus ingredientes y los que te falta uno solo.",
 )
 
-if seleccion:
-    tengo = [limpiar(i) for i in seleccion]
-    buscar_en = [region] if region else regiones
-    completas, casi = buscar_en_regiones(recetas_por_region, buscar_en, tengo)
+tengo = [limpiar(i) for i in seleccion]
+buscar_en = [region] if region else regiones
+donde = f" de {region}" if region else " de todas las regiones"
 
-    st.subheader("Puedes preparar" + (f" ({region})" if region else " (todas las regiones)"))
-    if completas:
-        for reg, nombre, datos in completas:
-            titulo = f"{nombre} · {reg}" if not region else nombre
-            with st.expander(titulo, expanded=len(completas) <= 3):
-                st.markdown("**Ingredientes:** " + ", ".join(datos["ingredientes"]))
-                for paso in pasos_en_lista(datos["pasos"]):
-                    st.write(paso)
+if solo_preparables:
+    if not seleccion:
+        st.info("Agrega al menos un ingrediente para ver lo que puedes preparar.")
     else:
-        st.info("Ninguna receta completa todavía. Prueba agregando más ingredientes.")
+        completas, casi = buscar_en_regiones(recetas_por_region, buscar_en, tengo)
 
-    if casi:
-        st.subheader("Te falta solo 1 ingrediente para")
-        for reg, nombre, falta in casi:
-            etiqueta = f" ({reg})" if not region else ""
-            st.write(f"- **{nombre}**{etiqueta} (te falta: {falta})")
+        st.subheader("Puedes preparar" + donde)
+        if completas:
+            for reg, nombre, datos in completas:
+                titulo = f"{nombre} · {reg}" if not region else nombre
+                with st.expander(titulo, expanded=len(completas) <= 3):
+                    st.markdown("**Ingredientes:** " + ", ".join(datos["ingredientes"]))
+                    mostrar_pasos(datos)
+        else:
+            st.info("Ninguna receta completa todavía. Prueba agregando más ingredientes.")
+
+        if casi:
+            st.subheader("Te falta solo 1 ingrediente para")
+            for reg, nombre, falta in casi:
+                etiqueta = f" ({reg})" if not region else ""
+                st.write(f"- **{nombre}**{etiqueta} (te falta: {falta})")
 else:
-    st.info("Agrega al menos un ingrediente para ver las recetas.")
+    if not region and not seleccion:
+        st.info("Elige una región o agrega ingredientes para ver los platos.")
+    else:
+        platos = platos_filtrados(recetas_por_region, buscar_en, tengo)
+        cantidad = len(platos)
+        palabra = "plato" if cantidad == 1 else "platos"
+        if seleccion:
+            st.subheader(f"{cantidad} {palabra}{donde} con tus ingredientes")
+        else:
+            st.subheader(f"{cantidad} {palabra}{donde}")
+
+        if not platos:
+            st.info("Ningún plato usa todos esos ingredientes. Quita alguno de la lista.")
+
+        for reg, nombre, datos, faltan in platos:
+            titulo = nombre if region else f"{nombre} · {reg}"
+            if seleccion and not faltan:
+                titulo = "✅ " + titulo
+            with st.expander(titulo, expanded=cantidad <= 3):
+                st.markdown("**Ingredientes:** " + ", ".join(datos["ingredientes"]))
+                if seleccion:
+                    if faltan:
+                        st.markdown("**Te faltan:** " + ", ".join(faltan))
+                    else:
+                        st.markdown("**Tienes todo lo necesario.**")
+                mostrar_pasos(datos)
