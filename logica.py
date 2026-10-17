@@ -36,9 +36,13 @@ def buscar_recetas(recetas, tengo):
             i for i in datos["ingredientes"]
             if limpiar(i) not in tengo and limpiar(i) not in BASICOS
         ]
+        tiene_alguno = any(
+            limpiar(i) in tengo and limpiar(i) not in BASICOS
+            for i in datos["ingredientes"]
+        )
         if not faltan:
             completas.append((nombre, datos))
-        elif len(faltan) == 1:
+        elif len(faltan) == 1 and tiene_alguno:
             casi.append((nombre, faltan[0]))
     return completas, casi
 
