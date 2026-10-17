@@ -45,7 +45,8 @@ Te falta solo 1 ingrediente para:
 ## Requisitos
 
 - Python 3.10 o superior.
-- No necesita instalar librerías adicionales.
+- La versión de terminal no necesita librerías adicionales.
+- La versión web necesita Streamlit (ver más abajo).
 
 ## Cómo ejecutarla
 
@@ -61,17 +62,36 @@ Te falta solo 1 ingrediente para:
    cd app-recetas
    ```
 
-3. Ejecuta la aplicación:
+3. Ejecuta la versión de terminal:
 
    ```
    python app.py
    ```
 
+### Versión web
+
+1. Instala Streamlit:
+
+   ```
+   python -m pip install -r requirements.txt
+   ```
+
+2. Ejecuta la página:
+
+   ```
+   python -m streamlit run app_web.py
+   ```
+
+   Se abre en el navegador (normalmente en http://localhost:8501).
+
 ## Estructura del proyecto
 
 | Archivo | Descripción |
 | --- | --- |
-| `app.py` | Lógica de la aplicación: lectura de ingredientes, limpieza de texto y búsqueda de recetas. |
+| `logica.py` | Lógica compartida: limpieza de texto, plurales y búsqueda de recetas. |
+| `app.py` | Versión de terminal. |
+| `app_web.py` | Versión web hecha con Streamlit. |
+| `requirements.txt` | Librerías necesarias para la versión web. |
 | `recetas.json` | Base de recetas organizada por región, con sus ingredientes y pasos. |
 
 ## Cómo agregar una receta
@@ -89,8 +109,7 @@ Escribe los ingredientes en minúscula y en singular.
 
 ## Próximos pasos
 
-- Interfaz web con Streamlit.
-- Más recetas colombianas.
+- Más recetas para cada región.
 - Lista de sinónimos para ingredientes (por ejemplo, ahuyama y zapallo).
 - Lectura de la factura del supermercado para cargar los ingredientes automáticamente.
 

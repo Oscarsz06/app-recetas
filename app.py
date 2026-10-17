@@ -1,22 +1,6 @@
-import unicodedata
-import json
+from logica import cargar_recetas, ingredientes_del_usuario, buscar_recetas
 
-def singular(palabra):
-    if len(palabra) > 3 and palabra.endswith("s"):
-        return palabra[:-1]
-    return palabra
-
-def limpiar(texto):
-    texto = texto.strip().lower()
-    texto = unicodedata.normalize("NFD", texto)
-    texto = "".join(c for c in texto if unicodedata.category(c) != "Mn")
-    return " ".join(singular(p) for p in texto.split())
-
-basicos = ["aceite", "sal"]
-
-with open("recetas.json", encoding="utf-8") as archivo:
-    recetas_por_region = json.load(archivo)
-
+recetas_por_region = cargar_recetas()
 regiones = list(recetas_por_region.keys())
 
 print("¿De qué región quieres cocinar?")
@@ -35,17 +19,9 @@ recetas = recetas_por_region[region]
 print(f"\nRegión elegida: {region}")
 print("Escribe los ingredientes que compraste, separados por coma.")
 entrada = input("Ingredientes: ")
-tengo = [limpiar(i) for i in entrada.split(",")]
+tengo = ingredientes_del_usuario(entrada)
 
-completas = []
-casi = []
-
-for nombre, datos in recetas.items():
-    faltan = [i for i in datos["ingredientes"] if limpiar(i) not in tengo and limpiar(i) not in basicos]
-    if not faltan:
-        completas.append((nombre, datos))
-    elif len(faltan) == 1:
-        casi.append((nombre, faltan[0]))
+completas, casi = buscar_recetas(recetas, tengo)
 
 print("\nPuedes preparar:")
 if completas:
