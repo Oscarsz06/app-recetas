@@ -53,3 +53,14 @@ def catalogo_ingredientes(recetas_por_region):
                 if clave not in BASICOS:
                     catalogo.setdefault(clave, ingrediente)
     return catalogo
+
+
+def buscar_en_regiones(recetas_por_region, regiones, tengo):
+    """Busca en las regiones indicadas y marca de qué región es cada plato."""
+    completas = []
+    casi = []
+    for region in regiones:
+        comp, parcial = buscar_recetas(recetas_por_region[region], tengo)
+        completas += [(region, nombre, datos) for nombre, datos in comp]
+        casi += [(region, nombre, falta) for nombre, falta in parcial]
+    return completas, casi

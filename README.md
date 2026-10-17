@@ -6,7 +6,7 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 
 ## Qué hace
 
-- Te deja elegir primero la región (Colombia, México, Italia, España o Perú).
+- En la web, la región (Colombia, México, Italia, España o Perú) es opcional: sin elegir ninguna busca en todas, y al elegir una botón filtra solo esa región. En la terminal la región se elige al inicio.
 - Incluye 150 recetas (30 por región).
 - En la web eliges los ingredientes desde una lista, agregando y quitando los que quieras. En la terminal los escribes separados por coma.
 - Muestra las recetas de esa región que se pueden preparar completas, con su paso a paso.
