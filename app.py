@@ -15,8 +15,24 @@ def limpiar(texto):
 basicos = ["aceite", "sal"]
 
 with open("recetas.json", encoding="utf-8") as archivo:
-    recetas = json.load(archivo)
+    recetas_por_region = json.load(archivo)
 
+regiones = list(recetas_por_region.keys())
+
+print("¿De qué región quieres cocinar?")
+for numero, nombre_region in enumerate(regiones, start=1):
+    print(f"{numero}. {nombre_region}")
+
+while True:
+    eleccion = input("Elige el número de la región: ").strip()
+    if eleccion.isdigit() and 1 <= int(eleccion) <= len(regiones):
+        region = regiones[int(eleccion) - 1]
+        break
+    print("Opción no válida, intenta de nuevo.")
+
+recetas = recetas_por_region[region]
+
+print(f"\nRegión elegida: {region}")
 print("Escribe los ingredientes que compraste, separados por coma.")
 entrada = input("Ingredientes: ")
 tengo = [limpiar(i) for i in entrada.split(",")]

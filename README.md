@@ -2,12 +2,13 @@
 
 Aplicación en Python que te dice qué puedes cocinar con los ingredientes que compraste en el mercado. El usuario escribe sus compras y la app muestra las recetas que puede preparar, con sus pasos, y también las que le faltan por un solo ingrediente.
 
-El proyecto nació para dar más variedad e ideas a la hora de cocinar, con recetas colombianas y de la costa.
+El proyecto nació para dar más variedad e ideas a la hora de cocinar, con recetas de Colombia y de otros países.
 
 ## Qué hace
 
+- Te deja elegir primero la región (Colombia, México, Italia, España o Perú).
 - Recibe una lista de ingredientes separados por coma.
-- Muestra las recetas que se pueden preparar completas, con su paso a paso.
+- Muestra las recetas de esa región que se pueden preparar completas, con su paso a paso.
 - Muestra las recetas a las que les falta solo un ingrediente, indicando cuál.
 - Reconoce mayúsculas, tildes y plurales (por ejemplo, "Papas", "PAPA" y "papa" cuentan igual).
 - Considera aceite y sal como ingredientes básicos que ya se tienen en casa.
@@ -15,6 +16,15 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 ## Ejemplo de uso
 
 ```
+¿De qué región quieres cocinar?
+1. Colombia
+2. México
+3. Italia
+4. España
+5. Perú
+Elige el número de la región: 1
+
+Región elegida: Colombia
 Escribe los ingredientes que compraste, separados por coma.
 Ingredientes: Arroz, pollo, cebolla, tomate, papa
 
@@ -62,11 +72,11 @@ Te falta solo 1 ingrediente para:
 | Archivo | Descripción |
 | --- | --- |
 | `app.py` | Lógica de la aplicación: lectura de ingredientes, limpieza de texto y búsqueda de recetas. |
-| `recetas.json` | Base de recetas con sus ingredientes y pasos. |
+| `recetas.json` | Base de recetas organizada por región, con sus ingredientes y pasos. |
 
 ## Cómo agregar una receta
 
-Abre `recetas.json` y agrega una entrada con este formato, cuidando las comas entre recetas:
+Abre `recetas.json`, busca la región a la que pertenece la receta (o crea una nueva con el nombre del país) y agrega una entrada con este formato dentro de ella, cuidando las comas entre recetas:
 
 ```json
 "Nombre de la receta": {

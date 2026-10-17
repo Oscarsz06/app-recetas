@@ -1,58 +1,298 @@
 {
-    "Arroz con huevo": {
-        "ingredientes": ["arroz", "huevo", "aceite", "sal"],
-        "pasos": "1. Cocina el arroz. 2. Fríe los huevos en aceite. 3. Sirve juntos con sal."
+    "Colombia": {
+        "Arroz con huevo": {
+            "ingredientes": [
+                "arroz",
+                "huevo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina el arroz. 2. Fríe los huevos en aceite. 3. Sirve juntos con sal."
+        },
+        "Huevos pericos": {
+            "ingredientes": [
+                "huevo",
+                "tomate",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Pica tomate y cebolla. 2. Sofríelos en aceite. 3. Agrega los huevos batidos y revuelve hasta que cuajen."
+        },
+        "Yuca frita": {
+            "ingredientes": [
+                "yuca",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina la yuca en agua con sal. 2. Córtala en tiras. 3. Fríela hasta que dore."
+        },
+        "Patacones": {
+            "ingredientes": [
+                "platano verde",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta el plátano en rodajas gruesas. 2. Fríe. 3. Aplasta, fríe de nuevo y sala."
+        },
+        "Arepa de huevo": {
+            "ingredientes": [
+                "harina de maiz",
+                "huevo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Mezcla la harina con agua y sal hasta tener una masa suave. 2. Forma arepas redondas y fríelas. 3. Ábrelas por un lado, mete un huevo crudo y fríe de nuevo hasta que cuaje."
+        },
+        "Arroz de coco": {
+            "ingredientes": [
+                "arroz",
+                "leche de coco",
+                "azucar",
+                "sal"
+            ],
+            "pasos": "1. Cocina la leche de coco con una pizca de sal y azúcar. 2. Agrega el arroz y cocina a fuego bajo hasta que se seque."
+        },
+        "Platano maduro frito": {
+            "ingredientes": [
+                "platano maduro",
+                "aceite"
+            ],
+            "pasos": "1. Corta el plátano maduro en tajadas. 2. Fríe a fuego medio hasta que doren por ambos lados."
+        },
+        "Pollo guisado": {
+            "ingredientes": [
+                "pollo",
+                "papa",
+                "tomate",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y tomate en aceite. 2. Agrega el pollo en presas y dóralo. 3. Añade la papa en trozos y un poco de agua. 4. Cocina tapado hasta que el pollo y la papa estén blandos."
+        },
+        "Arroz con pollo": {
+            "ingredientes": [
+                "arroz",
+                "pollo",
+                "cebolla",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y tomate. 2. Agrega el pollo en trozos y cocínalo. 3. Añade el arroz y agua. 4. Cocina tapado hasta que el arroz esté listo."
+        },
+        "Sancocho de pollo": {
+            "ingredientes": [
+                "pollo",
+                "papa",
+                "yuca",
+                "platano verde",
+                "cebolla",
+                "sal"
+            ],
+            "pasos": "1. Pon a hervir el pollo con cebolla y sal. 2. Agrega yuca, papa y plátano en trozos. 3. Cocina hasta que todo esté blando."
+        },
+        "Lentejas guisadas": {
+            "ingredientes": [
+                "lentejas",
+                "cebolla",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina las lentejas en agua hasta que ablanden. 2. Haz un sofrito de cebolla y tomate en aceite. 3. Mézclalo con las lentejas y deja hervir unos minutos con sal."
+        },
+        "Arroz con atun": {
+            "ingredientes": [
+                "arroz",
+                "atun",
+                "cebolla",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Sofríe cebolla y tomate. 2. Agrega el atún escurrido. 3. Mezcla con el arroz ya cocido."
+        }
     },
-    "Huevos pericos": {
-        "ingredientes": ["huevo", "tomate", "cebolla", "aceite", "sal"],
-        "pasos": "1. Pica tomate y cebolla. 2. Sofríelos en aceite. 3. Agrega los huevos batidos y revuelve hasta que cuajen."
+    "México": {
+        "Quesadillas": {
+            "ingredientes": [
+                "tortilla",
+                "queso"
+            ],
+            "pasos": "1. Pon queso sobre la mitad de la tortilla. 2. Dóblala y caliéntala en una sartén hasta que dore y el queso se derrita."
+        },
+        "Huevos rancheros": {
+            "ingredientes": [
+                "huevo",
+                "tortilla",
+                "tomate",
+                "cebolla",
+                "chile",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Pica tomate, cebolla y chile y cocínalos en aceite con sal para hacer la salsa. 2. Fríe los huevos. 3. Sírvelos sobre las tortillas calientes con la salsa por encima."
+        },
+        "Frijoles refritos": {
+            "ingredientes": [
+                "frijoles",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina los frijoles hasta que estén blandos. 2. Sofríe cebolla picada en aceite. 3. Agrega los frijoles con un poco de su caldo y aplástalos hasta lograr un puré espeso."
+        },
+        "Guacamole": {
+            "ingredientes": [
+                "aguacate",
+                "tomate",
+                "cebolla",
+                "cilantro",
+                "sal"
+            ],
+            "pasos": "1. Aplasta el aguacate con un tenedor. 2. Agrega tomate, cebolla y cilantro picados muy finos y sal. 3. Mezcla (puedes añadir limón si tienes)."
+        },
+        "Tacos de pollo": {
+            "ingredientes": [
+                "pollo",
+                "tortilla",
+                "cebolla",
+                "tomate",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina el pollo en trozos pequeños con sal y deshébralo. 2. Sofríe cebolla y tomate y mézclalos con el pollo. 3. Calienta las tortillas y rellénalas."
+        },
+        "Chilaquiles": {
+            "ingredientes": [
+                "tortilla",
+                "tomate",
+                "cebolla",
+                "chile",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta las tortillas en triángulos y fríelas hasta que estén crujientes. 2. Prepara una salsa con tomate, cebolla y chile cocinados con sal. 3. Mezcla los totopos con la salsa y sirve enseguida."
+        }
     },
-    "Yuca frita": {
-        "ingredientes": ["yuca", "aceite", "sal"],
-        "pasos": "1. Cocina la yuca en agua con sal. 2. Córtala en tiras. 3. Fríela hasta que dore."
+    "Italia": {
+        "Pasta con tomate": {
+            "ingredientes": [
+                "pasta",
+                "tomate",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Cocina la pasta en agua con sal. 2. Sofríe cebolla y tomate picados hasta que hagan salsa. 3. Mezcla la pasta con la salsa."
+        },
+        "Spaghetti aglio e olio": {
+            "ingredientes": [
+                "pasta",
+                "ajo",
+                "aceite"
+            ],
+            "pasos": "1. Cocina la pasta en agua con sal. 2. Dora ajo en láminas en aceite a fuego bajo sin que se queme. 3. Mezcla la pasta escurrida con el aceite y el ajo."
+        },
+        "Pasta carbonara": {
+            "ingredientes": [
+                "pasta",
+                "huevo",
+                "queso",
+                "tocineta",
+                "sal"
+            ],
+            "pasos": "1. Cocina la pasta en agua con sal. 2. Fríe la tocineta en trozos hasta que suelte su grasa. 3. Bate los huevos con queso rallado. 4. Mezcla todo con la pasta caliente, fuera del fuego, para que el huevo no se cuaje."
+        },
+        "Ensalada caprese": {
+            "ingredientes": [
+                "tomate",
+                "queso",
+                "albahaca",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta tomate y queso en rodajas. 2. Alterna las rodajas en un plato con hojas de albahaca. 3. Aliña con aceite y sal."
+        }
     },
-    "Patacones": {
-        "ingredientes": ["platano verde", "aceite", "sal"],
-        "pasos": "1. Corta el plátano en rodajas gruesas. 2. Fríe. 3. Aplasta, fríe de nuevo y sala."
+    "España": {
+        "Tortilla de papa": {
+            "ingredientes": [
+                "papa",
+                "huevo",
+                "cebolla",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Corta la papa y la cebolla en láminas finas y fríelas a fuego bajo. 2. Mézclalas con los huevos batidos y sal. 3. Cuaja la mezcla en la sartén por ambos lados."
+        },
+        "Huevos rotos": {
+            "ingredientes": [
+                "papa",
+                "huevo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Fríe la papa en tiras o rodajas hasta que dore. 2. Fríe los huevos aparte. 3. Pon los huevos sobre la papa y rompe las yemas al servir."
+        },
+        "Gazpacho": {
+            "ingredientes": [
+                "tomate",
+                "pepino",
+                "pimiento",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Pica tomate, pepino, pimiento y ajo. 2. Lícualos con aceite y sal hasta obtener una crema. 3. Enfría en la nevera antes de servir."
+        },
+        "Paella de pollo (versión sencilla)": {
+            "ingredientes": [
+                "arroz",
+                "pollo",
+                "pimiento",
+                "tomate",
+                "ajo",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Dora el pollo en trozos en aceite. 2. Agrega ajo, pimiento y tomate picados y sofríe. 3. Añade el arroz y el doble de agua con sal. 4. Cocina sin revolver hasta que el arroz esté listo."
+        }
     },
-    "Arepa de huevo": {
-        "ingredientes": ["harina de maiz", "huevo", "aceite", "sal"],
-        "pasos": "1. Mezcla la harina con agua y sal hasta tener una masa suave. 2. Forma arepas redondas y fríelas. 3. Ábrelas por un lado, mete un huevo crudo y fríe de nuevo hasta que cuaje."
-    },
-    "Arroz de coco": {
-        "ingredientes": ["arroz", "leche de coco", "azucar", "sal"],
-        "pasos": "1. Cocina la leche de coco con una pizca de sal y azúcar. 2. Agrega el arroz y cocina a fuego bajo hasta que se seque."
-    },
-    "Platano maduro frito": {
-        "ingredientes": ["platano maduro", "aceite"],
-        "pasos": "1. Corta el plátano maduro en tajadas. 2. Fríe a fuego medio hasta que doren por ambos lados."
-    },
-    "Pollo guisado": {
-        "ingredientes": ["pollo", "papa", "tomate", "cebolla", "aceite", "sal"],
-        "pasos": "1. Sofríe cebolla y tomate en aceite. 2. Agrega el pollo en presas y dóralo. 3. Añade la papa en trozos y un poco de agua. 4. Cocina tapado hasta que el pollo y la papa estén blandos."
-    },
-    "Arroz con pollo": {
-        "ingredientes": ["arroz", "pollo", "cebolla", "tomate", "aceite", "sal"],
-        "pasos": "1. Sofríe cebolla y tomate. 2. Agrega el pollo en trozos y cocínalo. 3. Añade el arroz y agua. 4. Cocina tapado hasta que el arroz esté listo."
-    },
-    "Sancocho de pollo": {
-        "ingredientes": ["pollo", "papa", "yuca", "platano verde", "cebolla", "sal"],
-        "pasos": "1. Pon a hervir el pollo con cebolla y sal. 2. Agrega yuca, papa y plátano en trozos. 3. Cocina hasta que todo esté blando."
-    },
-    "Lentejas guisadas": {
-        "ingredientes": ["lentejas", "cebolla", "tomate", "aceite", "sal"],
-        "pasos": "1. Cocina las lentejas en agua hasta que ablanden. 2. Haz un sofrito de cebolla y tomate en aceite. 3. Mézclalo con las lentejas y deja hervir unos minutos con sal."
-    },
-    "Tortilla de papa": {
-        "ingredientes": ["papa", "huevo", "cebolla", "aceite", "sal"],
-        "pasos": "1. Corta la papa y la cebolla en láminas finas y fríelas a fuego bajo. 2. Mézclalas con los huevos batidos y sal. 3. Cuaja la mezcla en la sartén por ambos lados."
-    },
-    "Pasta con tomate": {
-        "ingredientes": ["pasta", "tomate", "cebolla", "aceite", "sal"],
-        "pasos": "1. Cocina la pasta en agua con sal. 2. Sofríe cebolla y tomate picados hasta que hagan salsa. 3. Mezcla la pasta con la salsa."
-    },
-    "Arroz con atun": {
-        "ingredientes": ["arroz", "atun", "cebolla", "tomate", "aceite", "sal"],
-        "pasos": "1. Sofríe cebolla y tomate. 2. Agrega el atún escurrido. 3. Mezcla con el arroz ya cocido."
+    "Perú": {
+        "Arroz chaufa (versión sencilla)": {
+            "ingredientes": [
+                "arroz",
+                "huevo",
+                "cebolla",
+                "salsa de soya",
+                "aceite"
+            ],
+            "pasos": "1. Prepara una tortilla delgada con los huevos y córtala en tiras. 2. Saltea cebolla en aceite a fuego alto. 3. Agrega el arroz cocido, la salsa de soya y las tiras de huevo y mezcla bien."
+        },
+        "Papa a la huancaína (versión sencilla)": {
+            "ingredientes": [
+                "papa",
+                "queso",
+                "aji amarillo",
+                "huevo",
+                "leche"
+            ],
+            "pasos": "1. Cocina las papas y los huevos. 2. Licúa queso, ají amarillo y un poco de leche hasta obtener una crema. 3. Sirve las papas en rodajas con la crema por encima y huevo cocido."
+        },
+        "Lomo saltado": {
+            "ingredientes": [
+                "carne",
+                "cebolla",
+                "tomate",
+                "papa",
+                "salsa de soya",
+                "aceite",
+                "sal"
+            ],
+            "pasos": "1. Fríe la papa en bastones. 2. Saltea la carne en tiras a fuego alto con sal. 3. Agrega cebolla y tomate en gajos y la salsa de soya. 4. Mezcla con las papas fritas y sirve de inmediato."
+        }
     }
 }
