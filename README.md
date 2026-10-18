@@ -137,3 +137,17 @@ Abre `recetas.json`, busca la región y agrega una entrada con este formato, cui
 
 Oscar Iván Sánchez Arciniegas, estudiante de Ingeniería de Sistemas en la Universidad Autónoma del Caribe.
 Proyecto en desarrollo, construido como práctica de Python.
+
+## Pruebas automáticas
+
+El proyecto incluye 30 pruebas con `pytest`:
+
+- `tests/test_logica.py`: limpieza de texto (tildes, mayúsculas, plurales), filtro por ingredientes, ingredientes faltantes, búsqueda por nombre y formato de pasos y tiempo.
+- `tests/test_recetas.py`: valida que las 500 recetas tengan el formato correcto (cantidades, tiempo, porciones, dificultad, pasos y consejos).
+
+Para ejecutarlas:
+
+```
+pip install -r requirements-dev.txt
+pytest
+```
