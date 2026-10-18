@@ -7,8 +7,8 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 ## Qué hace
 
 - En la web, al elegir una región se ven todos sus platos, y cada ingrediente que agregas reduce la lista a los platos que lo usan. Un interruptor permite ver solo lo que ya puedes preparar con tus ingredientes.
-- En la web, la región (Colombia, México, Italia, España o Perú) es opcional: sin elegir ninguna busca en todas, y al elegir una botón filtra solo esa región. En la terminal la región se elige al inicio.
-- Incluye 150 recetas (30 por región).
+- En la web, la región (Colombia, México, Italia, España, Perú, Francia, Japón, Corea, Argentina o Estados Unidos) es opcional: sin elegir ninguna busca en todas, y al elegir una botón filtra solo esa región. En la terminal la región se elige al inicio.
+- Incluye 500 recetas (50 por región) de 10 países.
 - En la web hay un buscador por nombre de plato (sin importar tildes, mayúsculas ni plurales), que funciona solo o combinado con la región y los ingredientes.
 - En cada receta, los ingredientes que tienes salen en verde (✓) y los que te faltan en rojo (✗).
 - En la web eliges los ingredientes desde una lista, agregando y quitando los que quieras. En la terminal los escribes separados por coma.
@@ -16,7 +16,7 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 - Muestra las recetas a las que les falta solo un ingrediente, indicando cuál.
 - Reconoce mayúsculas, tildes y plurales (por ejemplo, "Papas", "PAPA" y "papa" cuentan igual).
 - Considera aceite y sal como ingredientes básicos que ya se tienen en casa.
-- Cada receta (150 en total, 30 por región) muestra tiempo, porciones, dificultad, utensilios, ingredientes con cantidades, pasos detallados y consejos.
+- Cada receta muestra tiempo, porciones, dificultad, utensilios, ingredientes con cantidades, pasos detallados y consejos.
 - En la web, los ingredientes que tienes aparecen en verde y los que faltan en rojo.
 
 ## Ejemplo de uso
@@ -28,6 +28,11 @@ El proyecto nació para dar más variedad e ideas a la hora de cocinar, con rece
 3. Italia
 4. España
 5. Perú
+6. Francia
+7. Japón
+8. Corea
+9. Argentina
+10. Estados Unidos
 Elige el número de la región: 1
 
 Región elegida: Colombia
