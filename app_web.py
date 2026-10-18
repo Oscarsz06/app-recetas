@@ -103,11 +103,49 @@ opciones = sorted(catalogo.values(), key=limpiar)
 st.title("🍳 RecetApp")
 st.write("Elige una región para ver sus platos y agrega ingredientes para ir reduciendo la lista.")
 
-busqueda = st.text_input(
-    "Buscar plato por nombre",
-    placeholder="Ej. pollo, arepa, ceviche...",
-    help="Escribe parte del nombre y presiona Enter. No importan las tildes ni las mayúsculas.",
-).strip()
+def borrar_busqueda():
+    st.session_state["busqueda"] = ""
+
+
+st.markdown(
+    """
+    <style>
+    /* Botón ✕ unido al cuadro de búsqueda, como una sola pieza */
+    .st-key-buscador [data-testid="stHorizontalBlock"] { gap: 0 !important; flex-wrap: nowrap !important; }
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div:first-child { flex: 1 1 auto !important; min-width: 0 !important; width: auto !important; }
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child { flex: 0 0 3.2rem !important; width: 3.2rem !important; min-width: 3.2rem !important; padding: 0 !important; margin-left: -2px !important; position: relative; z-index: 1; }
+    .st-key-buscador [data-testid="stTextInput"] [data-baseweb="input"],
+    .st-key-buscador [data-testid="stTextInput"] [data-baseweb="base-input"],
+    .st-key-buscador [data-testid="stTextInput"] input {
+        border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;
+    }
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child [data-testid="stButton"],
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child [data-testid="stElementContainer"] { width: 100% !important; }
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child button {
+        width: 100% !important; height: 2.5rem !important; min-height: 2.5rem !important; margin: 0 !important; padding: 0 !important;
+        border: none !important; box-shadow: none !important;
+        background-color: #262730 !important; color: inherit !important; outline: none !important;
+        border-radius: 0 0.5rem 0.5rem 0 !important;
+    }
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child button:hover {
+        background-color: #31333F !important; color: #66BB6A !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+with st.container(key="buscador"):
+    col_busqueda, col_borrar = st.columns([12, 1], gap="small", vertical_alignment="bottom")
+    with col_busqueda:
+        busqueda = st.text_input(
+            "Buscar plato por nombre",
+            key="busqueda",
+            placeholder="Ej. pollo, arepa, ceviche...",
+            help="Escribe parte del nombre y presiona Enter. No importan las tildes ni las mayúsculas.",
+        ).strip()
+    with col_borrar:
+        st.button("✕", on_click=borrar_busqueda, help="Borrar lo escrito")
 
 region = st.pills(
     "Región (opcional)",
