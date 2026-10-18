@@ -110,39 +110,44 @@ def borrar_busqueda():
 st.markdown(
     """
     <style>
-    /* Botón ✕ unido al cuadro de búsqueda, como una sola pieza */
-    .st-key-buscador [data-testid="stHorizontalBlock"] { gap: 0 !important; flex-wrap: nowrap !important; }
+    /* Cuadro de búsqueda + botón ✕: una sola caja con un único fondo (sin unión visible) */
+    .st-key-buscador [data-testid="stHorizontalBlock"] {
+        gap: 0 !important; flex-wrap: nowrap !important; align-items: stretch !important;
+        background-color: #262730; border-radius: 0.5rem; overflow: hidden;
+    }
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div { padding: 0 !important; margin: 0 !important; }
     .st-key-buscador [data-testid="stHorizontalBlock"] > div:first-child { flex: 1 1 auto !important; min-width: 0 !important; width: auto !important; }
-    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child { flex: 0 0 3.2rem !important; width: 3.2rem !important; min-width: 3.2rem !important; padding: 0 !important; margin-left: -2px !important; position: relative; z-index: 1; }
-    .st-key-buscador [data-testid="stTextInput"] [data-baseweb="input"],
-    .st-key-buscador [data-testid="stTextInput"] [data-baseweb="base-input"],
-    .st-key-buscador [data-testid="stTextInput"] input {
-        border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child { flex: 0 0 3.2rem !important; width: 3.2rem !important; min-width: 3.2rem !important; }
+    .st-key-buscador [data-baseweb="input"],
+    .st-key-buscador [data-baseweb="base-input"],
+    .st-key-buscador input {
+        background-color: transparent !important; border: none !important; border-radius: 0 !important; box-shadow: none !important;
     }
     .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child [data-testid="stButton"],
     .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child [data-testid="stElementContainer"] { width: 100% !important; }
     .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child button {
         width: 100% !important; height: 2.5rem !important; min-height: 2.5rem !important; margin: 0 !important; padding: 0 !important;
-        border: none !important; box-shadow: none !important;
-        background-color: #262730 !important; color: inherit !important; outline: none !important;
-        border-radius: 0 0.5rem 0.5rem 0 !important;
+        border: none !important; box-shadow: none !important; outline: none !important; border-radius: 0 !important;
+        background-color: transparent !important; color: inherit !important;
     }
-    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child button:hover {
-        background-color: #31333F !important; color: #66BB6A !important;
-    }
+    .st-key-buscador [data-testid="stHorizontalBlock"] > div:last-child button:hover { color: #66BB6A !important; }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
+st.markdown(
+    "Buscar plato por nombre",
+    help="Escribe parte del nombre y presiona Enter. No importan las tildes ni las mayúsculas.",
+)
 with st.container(key="buscador"):
-    col_busqueda, col_borrar = st.columns([12, 1], gap="small", vertical_alignment="bottom")
+    col_busqueda, col_borrar = st.columns([12, 1], gap="small", vertical_alignment="center")
     with col_busqueda:
         busqueda = st.text_input(
             "Buscar plato por nombre",
             key="busqueda",
+            label_visibility="collapsed",
             placeholder="Ej. pollo, arepa, ceviche...",
-            help="Escribe parte del nombre y presiona Enter. No importan las tildes ni las mayúsculas.",
         ).strip()
     with col_borrar:
         st.button("✕", on_click=borrar_busqueda, help="Borrar lo escrito")
